@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Markdown</title>
+    <title>markdown</title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 <body>
@@ -15,7 +15,7 @@
  
     <a href="/blog.html" >blog</a>
  
-</nav> <h1>Markdown</h1>
+</nav> <h1>markdown</h1>
 <p>06 Mar 2025 - </p>
 
 <p>penjelasan tentang markdown</p>
@@ -36,36 +36,40 @@
 
 <p>Contoh Sintaks Markdown</p>
 
-<h3 id="1-heading-judul">1. <strong>Heading (Judul)</strong></h3>
+<h2 id="1-heading-judul">1. Heading (Judul)</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># Heading 1</span>
+<span class="gu">## Heading 2</span>
+<span class="gu">### Heading 3</span>
+</code></pre></div></div>
+<p>Hasilnya:</p>
 
 <h1 id="heading-1">Heading 1</h1>
 <h2 id="heading-2">Heading 2</h2>
 <h3 id="heading-3">Heading 3</h3>
 
+<hr />
+
+<h2 id="2-teks-tebal-miring-dan-garis-tengah">2. Teks Tebal, Miring, dan Garis Tengah</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gs">**Tebal**</span>  
+<span class="ge">*Miring*</span>  
+~~Dicoret~~  
+</code></pre></div></div>
 <p>Hasilnya:</p>
-
-<p>Heading 1
-Heading 2
-Heading 3</p>
-
-<ol>
-  <li>Teks Tebal, Miring, dan Garis Tengah</li>
-</ol>
 
 <p><strong>Tebal</strong><br />
 <em>Miring</em><br />
 <del>Dicoret</del></p>
 
-<p>Hasilnya:
-Tebal
-Miring</p>
+<hr />
 
-<ol>
-  <li>Daftar</li>
-</ol>
-
-<p>Daftar Tidak Berurutan</p>
-
+<h2 id="3-daftar">3. Daftar</h2>
+<h3 id="daftar-tidak-berurutan"><strong>Daftar Tidak Berurutan</strong></h3>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> Item 1
+<span class="p">-</span> Item 2
+<span class="p">  -</span> Subitem 2.1
+<span class="p">  -</span> Subitem 2.2
+</code></pre></div></div>
+<p>Hasilnya:</p>
 <ul>
   <li>Item 1</li>
   <li>Item 2
@@ -76,32 +80,136 @@ Miring</p>
   </li>
 </ul>
 
-<p>Daftar Berurutan</p>
-
+<h3 id="daftar-berurutan"><strong>Daftar Berurutan</strong></h3>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">1.</span> Item pertama
+<span class="p">2.</span> Item kedua
+<span class="p">3.</span> Item ketiga
+</code></pre></div></div>
+<p>Hasilnya:</p>
 <ol>
   <li>Item pertama</li>
   <li>Item kedua</li>
-  <li>
-    <p>Item ketiga</p>
-  </li>
-  <li>Link dan Gambar</li>
+  <li>Item ketiga</li>
 </ol>
 
-<p><a href="https://www.google.com">Google</a><br />
+<hr />
+
+<h2 id="4-link-dan-gambar">4. Link dan Gambar</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">Google</span><span class="p">](</span><span class="sx">https://www.google.com</span><span class="p">)</span>  
+<span class="p">![</span><span class="nv">Gambar Contoh</span><span class="p">](</span><span class="sx">https://via.placeholder.com/150</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Hasilnya:
+<a href="https://www.google.com">Google</a><br />
 <img src="https://via.placeholder.com/150" alt="Gambar Contoh" /></p>
 
-<p>Hasilnya:
-Google</p>
+<hr />
 
-<ol>
-  <li>Kode (Code Block)</li>
-</ol>
-
-<p><code class="language-plaintext highlighter-rouge">Kode inline</code></p>
-
+<h2 id="5-kode-code-block">5. Kode (Code Block)</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sb">`Kode inline`</span>
+</code></pre></div></div>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>
 <p>Kode blok</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>
+<p>Hasilnya:
+<code class="language-plaintext highlighter-rouge">Kode inline</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Kode blok
+</code></pre></div></div>
 
-<p>Markdown sangat berguna untuk menulis dengan cepat tanpa perlu memikirkan format yang kompleks. Kamu sudah pakai Markdown untuk Jekyll blog kamu?</p>
+<hr />
+
+<h2 id="6-kutipan-blockquote">6. Kutipan (Blockquote)</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; Ini adalah kutipan.</span>
+<span class="gt">&gt; Bisa terdiri dari beberapa baris.</span>
+</code></pre></div></div>
+<p>Hasilnya:</p>
+<blockquote>
+  <p>Ini adalah kutipan.<br />
+Bisa terdiri dari beberapa baris.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="7-garis-pemisah-horizontal-rule">7. Garis Pemisah (Horizontal Rule)</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">---
+</span></code></pre></div></div>
+<p>Hasilnya:
+—</p>
+
+<hr />
+
+<h2 id="8-tabel">8. Tabel</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Nama   | Umur | Kota      |
+|--------|------|----------|
+| Andi   | 25   | Jakarta  |
+| Budi   | 30   | Bandung  |
+</code></pre></div></div>
+<p>Hasilnya:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nama</th>
+      <th>Umur</th>
+      <th>Kota</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Andi</td>
+      <td>25</td>
+      <td>Jakarta</td>
+    </tr>
+    <tr>
+      <td>Budi</td>
+      <td>30</td>
+      <td>Bandung</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="9-checklist-to-do-list">9. Checklist (To-Do List)</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-</span> [x] Tugas 1
+<span class="p">-</span> [ ] Tugas 2
+<span class="p">-</span> [ ] Tugas 3
+</code></pre></div></div>
+<p>Hasilnya:</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Tugas 1</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Tugas 2</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Tugas 3</li>
+</ul>
+
+<hr />
+
+<h2 id="10-emoji-jika-didukung">10. Emoji (Jika Didukung)</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:smile: :rocket: :thumbsup:
+</code></pre></div></div>
+<p>Hasilnya (tergantung platform): 😄 🚀 👍</p>
+
+<hr />
+
+<h2 id="11-link-ke-heading-dalam-dokumen">11. Link ke Heading dalam Dokumen</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">Ke bagian Tabel</span><span class="p">](</span><span class="sx">#tabel</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Jika diklik, akan langsung menuju bagian “Tabel” dalam dokumen.</p>
+
+<hr />
+
+<h2 id="12-kode-dengan-highlight-sintaks">12. Kode dengan Highlight Sintaks</h2>
+<p>Gunakan tiga backticks (<code class="language-plaintext highlighter-rouge"> </code>`` `) dengan nama bahasa pemrograman untuk mendapatkan warna sintaks:</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">python
+</span><span class="k">def</span> <span class="nf">hello</span><span class="p">():</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Hello, World!</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">
+Hasilnya:
+</code>python
+def hello():
+    print(“Hello, World!”)</p>
+
+<hr />
 
 </body>
 </html>
