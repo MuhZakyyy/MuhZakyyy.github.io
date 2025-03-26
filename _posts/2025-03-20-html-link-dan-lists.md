@@ -112,8 +112,3 @@ Lists digunakan untuk menampilkan informasi dalam bentuk daftar. HTML memiliki t
 
 ---
 
-## **Kesimpulan**
-- **Link (`<a>`)** digunakan untuk menghubungkan halaman dalam dan luar website.
-- **Lists (`<ol>`, `<ul>`, `<dl>`)** digunakan untuk menyusun informasi dengan rapi.
-- Pemahaman yang baik tentang link dan lists akan meningkatkan kualitas navigasi dan tampilan website Anda.
-
