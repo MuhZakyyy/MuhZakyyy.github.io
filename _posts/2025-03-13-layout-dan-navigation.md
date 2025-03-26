@@ -7,13 +7,6 @@ penjelasan tentang layout dan navigation
 
 ![HTML link dan lists](/assets/image/layout%20dan%20navigation)
 
-
-## **Mengenal Layout dan Navigation dalam Web Development**
-
-Dalam dunia web development, dua elemen penting yang mempengaruhi pengalaman pengguna adalah **layout** dan **navigation**. Keduanya menentukan bagaimana informasi ditampilkan dan bagaimana pengguna menjelajahi situs dengan mudah.
-
----
-
 ## **Apa Itu Layout?**
 
 **Layout** adalah struktur tata letak halaman web yang menentukan posisi elemen-elemen seperti teks, gambar, menu navigasi, dan footer. Desain layout yang baik memastikan pengalaman pengguna yang nyaman serta tampilan yang estetis dan responsif.
