@@ -8,7 +8,7 @@
 }
 
 body {
-  padding: 15px;
+  padding: 0;
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
   color: #333;
@@ -270,7 +270,7 @@ html {
 
 body {
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   overflow-x: hidden;
   background: linear-gradient(to top, rgba(163, 1, 1, 0.7058823529), #161616);
   color: white;
