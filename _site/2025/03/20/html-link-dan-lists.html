@@ -15,11 +15,125 @@
  
     <a href="/blog.html" >blog</a>
  
-</nav> <h1>HTML link dan List</h1>
+</nav> 
+    <h1>HTML link dan List</h1>
 <p>20 Mar 2025 - </p>
 
-<p>Penjelasan tentang link dan lists pada HTML.
-<img src="/assets/image/images.jpg" alt="Html link dan list" /></p>
+<p>Penjelasan tentang link dan lists pada HTML.</p>
+
+<p><img src="/assets/image/images.jpg" alt="Html link dan list" /></p>
+
+<h2 id="mengenal-html-link-dan-lists"><strong>Mengenal HTML Link dan Lists</strong></h2>
+
+<p><strong>link (tautan)</strong> digunakan untuk menghubungkan halaman satu dengan yang lain, sedangkan <strong>lists (daftar)</strong> digunakan untuk menyusun informasi secara terstruktur. Kedua elemen ini sangat penting dalam pembuatan website yang interaktif dan mudah digunakan.</p>
+
+<hr />
+
+<h2 id="1-html-link-tautan"><strong>1. HTML Link (Tautan)</strong></h2>
+
+<h3 id="apa-itu-link-dalam-html"><strong>Apa Itu Link dalam HTML?</strong></h3>
+<p>Link atau hyperlink dibuat menggunakan tag <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> (anchor) yang menghubungkan halaman web ke halaman lain atau ke sumber eksternal.</p>
+
+<h3 id="contoh-link-dasar"><strong>Contoh Link Dasar</strong></h3>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.example.com"</span><span class="nt">&gt;</span>Kunjungi Example<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+<p><strong>Penjelasan:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> digunakan untuk membuat link.</li>
+  <li><code class="language-plaintext highlighter-rouge">href="URL"</code> menentukan tujuan tautan.</li>
+  <li>Teks di dalam <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> akan muncul sebagai link yang bisa diklik.</li>
+</ul>
+
+<h3 id="jenis-jenis-link-dalam-html"><strong>Jenis-Jenis Link dalam HTML</strong></h3>
+<ol>
+  <li><strong>Link ke Halaman Lain (Eksternal)</strong>
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.google.com"</span><span class="nt">&gt;</span>Buka Google<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Link ke Halaman dalam Website (Internal)</strong>
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"tentang-kami.html"</span><span class="nt">&gt;</span>Tentang Kami<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Link ke Bagian dalam Halaman (Anchor Link)</strong>
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#section2"</span><span class="nt">&gt;</span>Lihat Bagian 2<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Link ke Email (mailto)</strong>
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"mailto:email@example.com"</span><span class="nt">&gt;</span>Kirim Email<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Link untuk Download File</strong>
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"dokumen.pdf"</span> <span class="na">download</span><span class="nt">&gt;</span>Unduh Dokumen<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Membuka Link di Tab Baru</strong>
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.example.com"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>Buka di Tab Baru<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="2-html-lists-daftar"><strong>2. HTML Lists (Daftar)</strong></h2>
+
+<h3 id="apa-itu-lists-dalam-html"><strong>Apa Itu Lists dalam HTML?</strong></h3>
+<p>Lists digunakan untuk menampilkan informasi dalam bentuk daftar. HTML memiliki tiga jenis utama:</p>
+<ol>
+  <li><strong>Ordered List (<code class="language-plaintext highlighter-rouge">&lt;ol&gt;</code>)</strong> – Daftar berurutan (nomor atau huruf).</li>
+  <li><strong>Unordered List (<code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code>)</strong> – Daftar tidak berurutan (bullet point).</li>
+  <li><strong>Description List (<code class="language-plaintext highlighter-rouge">&lt;dl&gt;</code>)</strong> – Daftar dengan deskripsi tambahan.</li>
+</ol>
+
+<h3 id="1-ordered-list-daftar-berurutan"><strong>1. Ordered List (Daftar Berurutan)</strong></h3>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ol&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Pertama<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Kedua<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Ketiga<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</code></pre></div></div>
+<p><strong>Hasilnya:</strong></p>
+<ol>
+  <li>Pertama</li>
+  <li>Kedua</li>
+  <li>Ketiga</li>
+</ol>
+
+<p><strong>Atribut pada Ordered List:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">type="A"</code> → Huruf besar (A, B, C, …)</li>
+  <li><code class="language-plaintext highlighter-rouge">type="i"</code> → Angka Romawi kecil (i, ii, iii, …)</li>
+</ul>
+
+<h3 id="2-unordered-list-daftar-tidak-berurutan"><strong>2. Unordered List (Daftar Tidak Berurutan)</strong></h3>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Apel<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Pisang<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Jeruk<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+<p><strong>Hasilnya:</strong></p>
+<ul>
+  <li>Apel</li>
+  <li>Pisang</li>
+  <li>Jeruk</li>
+</ul>
+
+<h3 id="3-description-list-daftar-deskripsi"><strong>3. Description List (Daftar Deskripsi)</strong></h3>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dl&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>HTML<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>HyperText Markup Language<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;</span>CSS<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span>Cascading Style Sheets<span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span>
+</code></pre></div></div>
+<p><strong>Hasilnya:</strong>
+<strong>HTML</strong><br />
+  HyperText Markup Language<br />
+<strong>CSS</strong><br />
+  Cascading Style Sheets</p>
+
+<hr />
+
 
 </body>
 </html>
