@@ -229,32 +229,9 @@ ol {
   margin: 20px auto;
   padding: 0;
   list-style: none;
+  text-align: left;
 }
 
-ol li {
-  background: #ffffff;
-  margin: 10px 0;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-ol li:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-ol li a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-ol li a:hover {
-  color: #ff4757;
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 *{

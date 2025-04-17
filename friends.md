@@ -8,7 +8,7 @@ title: friends
     <i class="fas fa-user-friends"></i> Friends Page
   </h1>
   <p class="friends-subtitle">Teman-Teman Saya di Kelas :</p>
-
+ 
   <ol class="friends-list">
     <li class="friend-card"><a href="https://ahmadfayyadh.github.io/">Ahmad Fayyadh</a></li>
     <li class="friend-card"><a href="https://alanisamaharani.github.io/">Al Anisa Maharani</a></li>
