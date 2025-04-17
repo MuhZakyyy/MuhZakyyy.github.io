@@ -245,6 +245,13 @@ nav .current {
   border-bottom: 2px solid #000000;
 }
 
+ol {
+  padding: 0;
+  list-style: none;
+  max-width: 600px;
+  text-align: left;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
