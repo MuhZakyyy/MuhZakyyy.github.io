@@ -1,9 +1,4 @@
-title: Home
-baseurl: "" 
-url: "https:///MuhZakyyy.github.io/" 
-
+favicon: /assets/favicon.ico
+permalink: /:year/:month/:day/:title
 sass:
-  sass_dir: _sass
-  style: compressed
-
-theme: null
+  sass_dir: assets

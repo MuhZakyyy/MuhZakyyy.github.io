@@ -1,6 +1,6 @@
 ---
-layout: default
-title: friends
+layout : default
+title : friends
 ---
 
 <div class="friends-container">
