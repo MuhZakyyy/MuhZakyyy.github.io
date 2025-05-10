@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-10T10:34:38+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Plugins</title><link href="http://localhost:4000/2025/04/24/Plugins.html" rel="alternate" type="text/html" title="Plugins" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/Plugins</id><content type="html" xml:base="http://localhost:4000/2025/04/24/Plugins.html"><![CDATA[<p>Penjelasan tentang Plugins dalam jekyll</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-10T21:33:15+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Plugins</title><link href="http://localhost:4000/2025/04/24/Plugins.html" rel="alternate" type="text/html" title="Plugins" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/Plugins</id><content type="html" xml:base="http://localhost:4000/2025/04/24/Plugins.html"><![CDATA[<p>Penjelasan tentang Plugins dalam jekyll</p>
 
 <h2 id="-pengertian-plugin">🔍 Pengertian Plugin</h2>
 
@@ -8,68 +8,120 @@
 
 <hr />
 
-<h2 id="-kenapa-menggunakan-plugin">💡 Kenapa Menggunakan Plugin?</h2>
+<h2 id="-1-jekyll-sitemap">🔗 1. <code class="language-plaintext highlighter-rouge">jekyll-sitemap</code></h2>
 
-<ol>
-  <li>
-    <p><strong>Menambahkan Fitur Baru</strong><br />
-Misalnya, kamu ingin menambahkan galeri foto di website WordPress — tinggal install plugin galeri!</p>
-  </li>
-  <li>
-    <p><strong>Menghemat Waktu dan Biaya</strong><br />
-Tidak perlu membuat fitur dari nol. Cukup pasang plugin dan sesuaikan.</p>
-  </li>
-  <li>
-    <p><strong>Fleksibilitas</strong><br />
-Kamu bisa mengaktifkan atau menonaktifkan plugin sesuai kebutuhan.</p>
-  </li>
-  <li>
-    <p><strong>Komunitas Besar</strong><br />
-Banyak plugin bersifat open-source dengan dukungan komunitas yang kuat.</p>
-  </li>
-</ol>
+<p><strong>Fungsi</strong>:<br />
+Secara otomatis menghasilkan file <code class="language-plaintext highlighter-rouge">sitemap.xml</code>, yang sangat berguna bagi mesin pencari untuk memahami struktur situs kamu.</p>
+
+<p><strong>Kelebihan</strong>:</p>
+<ul>
+  <li>Membantu Google dan mesin pencari lainnya dalam proses crawling</li>
+  <li>Tidak perlu membuat sitemap secara manual</li>
+  <li>Langsung tersedia setelah proses build</li>
+</ul>
+
+<p><strong>Hasil</strong>:<br />
+File <code class="language-plaintext highlighter-rouge">sitemap.xml</code> muncul di root, misalnya:<br />
+<code class="language-plaintext highlighter-rouge">https://domainkamu.com/sitemap.xml</code></p>
 
 <hr />
 
-<h2 id="️-contoh-penggunaan-plugin">⚙️ Contoh Penggunaan Plugin</h2>
+<h2 id="-2-jekyll-feed">📡 2. <code class="language-plaintext highlighter-rouge">jekyll-feed</code></h2>
 
-<h3 id="1-wordpress">1. <strong>WordPress</strong></h3>
+<p><strong>Fungsi</strong>:<br />
+Membuat file <code class="language-plaintext highlighter-rouge">feed.xml</code> secara otomatis, sehingga pembaca dapat berlangganan konten kamu melalui aplikasi pembaca RSS.</p>
+
+<p><strong>Kelebihan</strong>:</p>
 <ul>
-  <li><strong>Yoast SEO</strong> – membantu optimasi konten untuk mesin pencari.</li>
-  <li><strong>Elementor</strong> – pembuat halaman drag-and-drop.</li>
-  <li><strong>WooCommerce</strong> – menambahkan fitur toko online.</li>
+  <li>Memudahkan distribusi konten ke pengguna tetap</li>
+  <li>Bisa digunakan oleh layanan pihak ketiga seperti Feedly, Mailchimp, dll</li>
 </ul>
 
-<h3 id="2-browser-chromefirefox">2. <strong>Browser (Chrome/Firefox)</strong></h3>
-<ul>
-  <li><strong>AdBlock</strong> – memblokir iklan.</li>
-  <li><strong>Grammarly</strong> – pengecek grammar otomatis.</li>
-</ul>
-
-<h3 id="3-software-editing">3. <strong>Software Editing</strong></h3>
-<ul>
-  <li><strong>Adobe Photoshop Plugins</strong> – menambahkan filter atau efek khusus.</li>
-  <li><strong>VSCode Extensions</strong> – seperti plugin untuk bahasa pemrograman tambahan.</li>
-</ul>
+<p><strong>Hasil</strong>:<br />
+<code class="language-plaintext highlighter-rouge">https://domainkamu.com/feed.xml</code> akan tersedia otomatis.</p>
 
 <hr />
 
-<h2 id="-tips-aman-menggunakan-plugin">🔐 Tips Aman Menggunakan Plugin</h2>
+<h2 id="-3-jekyll-seo-tag">🔍 3. <code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code></h2>
 
+<p><strong>Fungsi</strong>:<br />
+Menambahkan tag SEO secara otomatis ke bagian <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> HTML halaman, termasuk metadata untuk mesin pencari dan media sosial.</p>
+
+<p><strong>Kelebihan</strong>:</p>
 <ul>
-  <li>Gunakan hanya dari sumber terpercaya (misalnya repositori resmi).</li>
-  <li>Periksa review dan rating pengguna lain.</li>
-  <li>Update secara rutin untuk mencegah celah keamanan.</li>
-  <li>Hindari terlalu banyak plugin — bisa membuat sistem berat atau konflik antar plugin.</li>
+  <li>Tambahkan informasi penting seperti title, description, dan canonical</li>
+  <li>Mendukung Open Graph dan Twitter Card</li>
+  <li>Konfigurasi cukup lewat <code class="language-plaintext highlighter-rouge">_config.yml</code></li>
 </ul>
 
+<p><strong>Penggunaan</strong>:<br />
+Letakkan tag ini di layout utama kamu (misal <code class="language-plaintext highlighter-rouge">default.html</code>):</p>
+
+<p>```liquid
+<!-- Begin Jekyll SEO tag v2.8.0 --></p>
+<title>Plugins</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+
+<meta property="og:title" content="Plugins" />
+
+<meta property="og:locale" content="en_US" />
+
+<meta name="description" content="Penjelasan tentang Plugins dalam jekyll" />
+
+<meta property="og:description" content="Penjelasan tentang Plugins dalam jekyll" />
+
+<link rel="canonical" href="http://localhost:4000/2025/04/24/Plugins.html" />
+
+<meta property="og:url" content="http://localhost:4000/2025/04/24/Plugins.html" />
+
+<meta property="og:type" content="article" />
+
+<meta property="article:published_time" content="2025-04-24T00:00:00+07:00" />
+
+<meta name="twitter:card" content="summary" />
+
+<meta property="twitter:title" content="Plugins" />
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-24T00:00:00+07:00","datePublished":"2025-04-24T00:00:00+07:00","description":"Penjelasan tentang Plugins dalam jekyll","headline":"Plugins","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/04/24/Plugins.html"},"url":"http://localhost:4000/2025/04/24/Plugins.html"}</script>
+
+<!-- End Jekyll SEO tag -->
+
 <hr />
+
+<h2 id="️-cara-menginstal-plugin-jekyll">⚙️ Cara Menginstal Plugin Jekyll</h2>
+
+<p>Untuk menambahkan plugin ke proyek Jekyll kamu, ikuti langkah-langkah berikut:</p>
+
+<h3 id="1-tambahkan-ke-gemfile"><strong>1. Tambahkan ke Gemfile</strong></h3>
+
+<p>Edit file <code class="language-plaintext highlighter-rouge">Gemfile</code> dan masukkan baris berikut dalam grup plugin:</p>
+
+<p>```ruby</p>
+<h1 id="tambahkan-plugin-jekyll-di-sini">Tambahkan plugin Jekyll di sini</h1>
+<p>group :jekyll_plugins do
+  gem ‘jekyll-sitemap’
+  gem ‘jekyll-feed’
+  gem ‘jekyll-seo-tag’
+end</p>
+
+<h3 id="2-instal-plugin"><strong>2. Instal Plugin</strong></h3>
+<p>Setelah plugin ditambahkan, jalankan perintah ini di terminal untuk menginstalnya:</p>
+
+<p>bundle install</p>
+
+<p>Dan pastikan plugins sudah ada di_config.yml:</p>
+
+<p>plugins:</p>
+<ul>
+  <li>jekyll-sitemap</li>
+  <li>jekyll-feed</li>
+  <li>jekyll-seo-tag</li>
+</ul>
 
 <h2 id="-kesimpulan">📝 Kesimpulan</h2>
 
-<p>Plugin adalah cara praktis untuk memperluas kemampuan software atau platform yang kamu gunakan. Entah itu untuk blogging, coding, editing, atau browsing, plugin bisa membantu meningkatkan efisiensi kerja dan kualitas output.</p>
-
-<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[Penjelasan tentang Plugins dalam jekyll]]></summary></entry><entry><title type="html">HTML link dan List</title><link href="http://localhost:4000/2025/03/20/html-link-dan-lists.html" rel="alternate" type="text/html" title="HTML link dan List" /><published>2025-03-20T00:00:00+07:00</published><updated>2025-03-20T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/20/html-link-dan-lists</id><content type="html" xml:base="http://localhost:4000/2025/03/20/html-link-dan-lists.html"><![CDATA[<p>Penjelasan tentang link dan lists pada HTML.</p>
+<h2 id="memanfaatkan-plugin-seperti-jekyll-sitemap-jekyll-feed-dan-jekyll-seo-tag-merupakan-cara-efektif-untuk-menjadikan-blog-jekyll-kamu-lebih-optimal-baik-untuk-mesin-pencari-maupun-pengunjung-hanya-dengan-pengaturan-yang-sederhana-kamu-sudah-bisa-menikmati-fitur-fitur-canggih-yang-membuat-blog-tampak-lebih-profesional">Memanfaatkan plugin seperti jekyll-sitemap, jekyll-feed, dan jekyll-seo-tag merupakan cara efektif untuk menjadikan blog Jekyll kamu lebih optimal baik untuk mesin pencari maupun pengunjung. Hanya dengan pengaturan yang sederhana, kamu sudah bisa menikmati fitur-fitur canggih yang membuat blog tampak lebih profesional.</h2>]]></content><author><name></name></author><summary type="html"><![CDATA[Penjelasan tentang Plugins dalam jekyll]]></summary></entry><entry><title type="html">HTML link dan List</title><link href="http://localhost:4000/2025/03/20/html-link-dan-lists.html" rel="alternate" type="text/html" title="HTML link dan List" /><published>2025-03-20T00:00:00+07:00</published><updated>2025-03-20T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/20/html-link-dan-lists</id><content type="html" xml:base="http://localhost:4000/2025/03/20/html-link-dan-lists.html"><![CDATA[<p>Penjelasan tentang link dan lists pada HTML.</p>
 
 <p><img src="/assets/image/images.jpg" alt="Html link dan list" /></p>
 
