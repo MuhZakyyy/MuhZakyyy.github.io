@@ -146,7 +146,7 @@ code {
 .blog-title {
   font-size: 28px;
   font-weight: 700;
-  color: #ff0000;
+  color: #ffffff;
   text-align: center;
   margin-top: 30px;
   display: flex;
@@ -394,10 +394,8 @@ span1 {
   position: relative;
   width: 32vw;
   border-radius: 50%;
-  box-shadow: 0 0 25px #b74b4b;
   cursor: pointer;
   transition: 0.2s linear;
-  border: 5px solid #b74b4b; /* Tambahkan border */
 }
 
 .home-img img:hover {
@@ -497,7 +495,7 @@ span1 {
 }
 @media (max-width: 995px) {
   .home {
-    flex-direction: wrap;
+    flex-direction: column;
     margin: 5rem 4rem;
   }
   .home .home-content h3 {
