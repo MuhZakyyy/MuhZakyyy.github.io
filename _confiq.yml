@@ -1,5 +1,14 @@
-theme: jekyll-theme-primer
-favicon: /assets/favicon.ico
-permalink: /:year/:month/:day/:title
+title: Home
+baseurl: ""
+url: "https://github.com/MuhZakyyy/MuhZakyyy.github.io"
+
 sass:
-  sass_dir: assets
+  sass_dir: _sass
+  style: compressed
+
+  theme: null
+
+  plugins:
+   - jekyll-feed
+   - jekyll-seo-tag
+   - jekyll-sitemap
