@@ -1,10 +1,4 @@
 favicon: /assets/favicon.ico
 permalink: /:year/:month/:day/:title
-theme: minima
-
 sass:
   sass_dir: assets
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
