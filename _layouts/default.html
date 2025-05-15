@@ -9,14 +9,13 @@
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 
     <!--favicon-->
-    <link rel="icon" href="{{ site.baseurl }}/assets/images/favicon.ico" />
+    <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" />
 
     <!--javascript-->
-    <script src="{{ site.baseurl }}/assets/js/scripts.js"></script>
+    <script src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
 
     <!--plugins-->
-   {% seo %}
-
+    {% seo %}
 </head>
 <body>
     {% include navigation.html %} 
