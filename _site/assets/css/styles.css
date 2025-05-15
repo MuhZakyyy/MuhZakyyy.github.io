@@ -22,14 +22,24 @@ body {
   padding: -5px;
   width: 101%;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .navbar a {
   color: white;
   padding: 15px 20px;
+  font-size: 18px;
   text-decoration: none;
   text-align: center;
   transition: color 0.3s;
+  margin: 0 15px;
+}
+
+.navbar a:hover {
+  color: #b94646;
+  transition: color 0.3s;
+  border-bottom: 2px solid #b94646;
+  padding-bottom: 5px;
 }
 
 /* Main Content */
