@@ -473,7 +473,6 @@ span1 {
 
 .typing-text span::after {
   content: "";
-  background-color: rgb(0, 0, 0);
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
@@ -518,20 +517,6 @@ span1 {
     width: 70vw;
     margin-top: 4rem;
   }
-}
-.clock {
-  position: fixed;
-  top: 20px;
-  right: 30px;
-  font-family: "Orbitron", sans-serif;
-  font-size: 28px;
-  color: #f5f5f5;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 10px 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(255, 76, 76, 0.4);
-  z-index: 1000;
-  backdrop-filter: blur(10px);
 }
 
 /*# sourceMappingURL=styles.css.map */
