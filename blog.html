@@ -1,33 +1,17 @@
 ---
 layout: default
-title: Blog
+title: blog
 ---
 
-<h1 class="blog-title">Blog Page</h1>
-<h2 class="blog-subtitle">Kumpulan Artikel Saya:</h2>
-
-<div class="blog-posts">
-    <div class="blog-card">
-        <a href="/2025/03/20/html-link-dan-lists.html">HTML Link dan Lists</a>
-        <p>20 Mar 2025</p>
-        <p>Penjelasan tentang Link dan Lists pada HTML.</p>
-    </div>
-
-    <div class="blog-card">
-        <a href="/2025/03/13/layout-dan-navigation.html">Layout dan Navigation</a>
-        <p>13 Mar 2025</p>
-        <p>Penjelasan tentang Layout dan Navigation</p>
-    </div>
-
-    <div class="blog-card">
-        <a href="/2025/03/06/markdown.html">Markdown</a>
-        <p>06 Mar 2025</p>
-        <p>Penjelasan tentang markdown</p>
-    </div>
-
-    <div class="blog-card">
-        <a href="/2025/02/20/instalasi-ruby-dan-jekyll.html">Instalasi Ruby dan Jekyll</a>
-        <p>20 Feb 2025</p>
-        <p>Penjelasan tentang instalasi ruby dan jekyll</p>
-    </div>
-</div>
+<div class="blog-container">
+  <h1 class="blog-title">Blog</h1>
+  <h2 class="blog-subtitle">Blog Kumpulan artikel</h2>
+  <ul>
+{% for post in site.posts %}
+<article class="blog-posts">
+  <h2 class="blog-card">
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </h2>
+  <p class="post-meta">{{ post.date | date: "%d %b %Y" }}</p>
+</article>
+{% endfor %}

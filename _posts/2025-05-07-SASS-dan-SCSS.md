@@ -1,3 +1,7 @@
+---
+layout: post
+title: materi SASS dan SCSS
+---
 # Materi: SASS dan SCSS
 
 ## 1. Pendahuluan

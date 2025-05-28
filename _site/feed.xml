@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-21T22:56:23+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Sass Dan Scss</title><link href="http://localhost:4000/2025/05/07/SASS-dan-SCSS.html" rel="alternate" type="text/html" title="Sass Dan Scss" /><published>2025-05-07T00:00:00+07:00</published><updated>2025-05-07T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/07/SASS-dan-SCSS</id><content type="html" xml:base="http://localhost:4000/2025/05/07/SASS-dan-SCSS.html"><![CDATA[<h1 id="materi-sass-dan-scss">Materi: SASS dan SCSS</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-28T22:01:26+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">materi SASS dan SCSS</title><link href="http://localhost:4000/2025/05/07/SASS-dan-SCSS.html" rel="alternate" type="text/html" title="materi SASS dan SCSS" /><published>2025-05-07T00:00:00+07:00</published><updated>2025-05-07T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/07/SASS-dan-SCSS</id><content type="html" xml:base="http://localhost:4000/2025/05/07/SASS-dan-SCSS.html"><![CDATA[<h1 id="materi-sass-dan-scss">Materi: SASS dan SCSS</h1>
 
 <h2 id="1-pendahuluan">1. Pendahuluan</h2>
 <p><strong>SASS (Syntactically Awesome Stylesheets)</strong> adalah sebuah preprocessor CSS yang menambahkan fitur seperti variabel, nested rules, mixins, functions, inheritance, dan lain-lain, yang tidak tersedia dalam CSS standar.</p>
@@ -62,7 +62,54 @@ $primary-color: #333;</p>
 SCSS sangat cocok digunakan karena sintaksnya mirip dengan CSS biasa.<br />
 Dengan fitur seperti variabel, nesting, mixins, dan modularisasi, pengelolaan gaya dalam proyek menjadi lebih cepat dan efisien.</p>
 
-<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[Materi: SASS dan SCSS]]></summary></entry><entry><title type="html">Plugins</title><link href="http://localhost:4000/2025/04/24/Plugins.html" rel="alternate" type="text/html" title="Plugins" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/Plugins</id><content type="html" xml:base="http://localhost:4000/2025/04/24/Plugins.html"><![CDATA[<p>Penjelasan tentang Plugins dalam jekyll</p>
+<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[Materi: SASS dan SCSS]]></summary></entry><entry><title type="html">Belajar config yml</title><link href="http://localhost:4000/2025/04/24/config-yml.html" rel="alternate" type="text/html" title="Belajar config yml" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/config-yml</id><content type="html" xml:base="http://localhost:4000/2025/04/24/config-yml.html"><![CDATA[<h3 id="keterangan">Keterangan</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">title</code>, <code class="language-plaintext highlighter-rouge">description</code>, <code class="language-plaintext highlighter-rouge">author</code>, dan <code class="language-plaintext highlighter-rouge">theme</code> adalah <strong>key</strong></li>
+  <li>Nilai setelah tanda <code class="language-plaintext highlighter-rouge">:</code> adalah <strong>value</strong></li>
+</ul>
+
+<hr />
+
+<h3 id="contoh-nested-struktur-bertingkat">Contoh Nested (Struktur Bertingkat)</h3>
+
+<p>```yml
+user:
+  name: Muhammad Zaky
+  email: Muhammadzaky@example.com</p>
+
+<hr />
+
+<h3 id="contoh-listarray-dalam-yml">Contoh List/Array dalam YML</h3>
+
+<p>```yml
+skills:</p>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>Python</li>
+</ul>
+
+<hr />
+
+<h3 id="-kesimpulan">✅ Kesimpulan</h3>
+
+<ul>
+  <li>File <code class="language-plaintext highlighter-rouge">.yml</code> adalah bagian penting dalam pengaturan konfigurasi banyak proyek modern.</li>
+  <li>Format ini ringan, mudah dibaca, namun <strong>sensitif terhadap indentasi</strong>.</li>
+  <li>Memahami YAML sangat membantu saat bekerja dengan:
+    <ul>
+      <li><strong>Jekyll</strong></li>
+      <li><strong>GitHub Actions</strong></li>
+      <li><strong>Netlify</strong></li>
+      <li><strong>Docker</strong></li>
+      <li><strong>CI/CD tools</strong> lainnya</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[Keterangan]]></summary></entry><entry><title type="html">Plugins</title><link href="http://localhost:4000/2025/04/24/Plugins.html" rel="alternate" type="text/html" title="Plugins" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/Plugins</id><content type="html" xml:base="http://localhost:4000/2025/04/24/Plugins.html"><![CDATA[<p>Penjelasan tentang Plugins dalam jekyll</p>
 
 <h2 id="-pengertian-plugin">🔍 Pengertian Plugin</h2>
 
@@ -185,87 +232,7 @@ end</p>
 
 <h2 id="-kesimpulan">📝 Kesimpulan</h2>
 
-<h2 id="memanfaatkan-plugin-seperti-jekyll-sitemap-jekyll-feed-dan-jekyll-seo-tag-merupakan-cara-efektif-untuk-menjadikan-blog-jekyll-kamu-lebih-optimal-baik-untuk-mesin-pencari-maupun-pengunjung-hanya-dengan-pengaturan-yang-sederhana-kamu-sudah-bisa-menikmati-fitur-fitur-canggih-yang-membuat-blog-tampak-lebih-profesional">Memanfaatkan plugin seperti jekyll-sitemap, jekyll-feed, dan jekyll-seo-tag merupakan cara efektif untuk menjadikan blog Jekyll kamu lebih optimal baik untuk mesin pencari maupun pengunjung. Hanya dengan pengaturan yang sederhana, kamu sudah bisa menikmati fitur-fitur canggih yang membuat blog tampak lebih profesional.</h2>]]></content><author><name></name></author><summary type="html"><![CDATA[Penjelasan tentang Plugins dalam jekyll]]></summary></entry><entry><title type="html">Confiq YML</title><link href="http://localhost:4000/2025/04/17/Confiq-YML.html" rel="alternate" type="text/html" title="Confiq YML" /><published>2025-04-17T00:00:00+07:00</published><updated>2025-04-17T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/17/Confiq-YML</id><content type="html" xml:base="http://localhost:4000/2025/04/17/Confiq-YML.html"><![CDATA[<h1 id="apa-itu-file-yml">Apa Itu File YML?</h1>
-
-<p><strong>YML</strong>, atau <strong>YAML</strong> (<em>YAML Ain’t Markup Language</em>), adalah format file konfigurasi yang digunakan untuk menyimpan data dalam bentuk terstruktur yang mudah dibaca manusia.</p>
-
-<p>Format ini sering digunakan dalam pengaturan konfigurasi aplikasi, pipeline deployment, hingga pengembangan web dengan framework seperti <strong>Jekyll</strong>, <strong>Docker</strong>, dan lainnya.</p>
-
-<hr />
-
-<h2 id="karakteristik-utama-format-yml">Karakteristik Utama Format YML</h2>
-
-<ul>
-  <li>Menggunakan <strong>indentasi spasi</strong>, bukan tab</li>
-  <li>Tidak memakai tanda kurung seperti <code class="language-plaintext highlighter-rouge">{}</code> atau <code class="language-plaintext highlighter-rouge">[]</code></li>
-  <li>Gunakan tanda titik dua <code class="language-plaintext highlighter-rouge">:</code> untuk memisahkan <em>key</em> dan <em>value</em></li>
-  <li>Mendukung struktur data seperti:
-    <ul>
-      <li>List / Array</li>
-      <li>Object / Map</li>
-      <li>Nested (bertingkat)</li>
-    </ul>
-  </li>
-</ul>
-
-<hr />
-
-<h2 id="contoh-konfigurasi-yml-sederhana">Contoh Konfigurasi YML Sederhana</h2>
-
-<p>```yml
-title: My Blog
-description: Belajar Web Development
-author: Zaky
-theme: minima</p>
-
-<h3 id="keterangan">Keterangan</h3>
-
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">title</code>, <code class="language-plaintext highlighter-rouge">description</code>, <code class="language-plaintext highlighter-rouge">author</code>, dan <code class="language-plaintext highlighter-rouge">theme</code> adalah <strong>key</strong></li>
-  <li>Nilai setelah tanda <code class="language-plaintext highlighter-rouge">:</code> adalah <strong>value</strong></li>
-</ul>
-
-<hr />
-
-<h3 id="contoh-nested-struktur-bertingkat">Contoh Nested (Struktur Bertingkat)</h3>
-
-<p>```yml
-user:
-  name: Muhammad Zaky
-  email: Muhammadzaky@example.com</p>
-
-<hr />
-
-<h3 id="contoh-listarray-dalam-yml">Contoh List/Array dalam YML</h3>
-
-<p>```yml
-skills:</p>
-<ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript</li>
-  <li>Python</li>
-</ul>
-
-<hr />
-
-<h3 id="-kesimpulan">✅ Kesimpulan</h3>
-
-<ul>
-  <li>File <code class="language-plaintext highlighter-rouge">.yml</code> adalah bagian penting dalam pengaturan konfigurasi banyak proyek modern.</li>
-  <li>Format ini ringan, mudah dibaca, namun <strong>sensitif terhadap indentasi</strong>.</li>
-  <li>Memahami YAML sangat membantu saat bekerja dengan:
-    <ul>
-      <li><strong>Jekyll</strong></li>
-      <li><strong>GitHub Actions</strong></li>
-      <li><strong>Netlify</strong></li>
-      <li><strong>Docker</strong></li>
-      <li><strong>CI/CD tools</strong> lainnya</li>
-    </ul>
-  </li>
-</ul>
-
-<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[Apa Itu File YML?]]></summary></entry><entry><title type="html">HTML link dan List</title><link href="http://localhost:4000/2025/03/20/html-link-dan-lists.html" rel="alternate" type="text/html" title="HTML link dan List" /><published>2025-03-20T00:00:00+07:00</published><updated>2025-03-20T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/20/html-link-dan-lists</id><content type="html" xml:base="http://localhost:4000/2025/03/20/html-link-dan-lists.html"><![CDATA[<p>Penjelasan tentang link dan lists pada HTML.</p>
+<h2 id="memanfaatkan-plugin-seperti-jekyll-sitemap-jekyll-feed-dan-jekyll-seo-tag-merupakan-cara-efektif-untuk-menjadikan-blog-jekyll-kamu-lebih-optimal-baik-untuk-mesin-pencari-maupun-pengunjung-hanya-dengan-pengaturan-yang-sederhana-kamu-sudah-bisa-menikmati-fitur-fitur-canggih-yang-membuat-blog-tampak-lebih-profesional">Memanfaatkan plugin seperti jekyll-sitemap, jekyll-feed, dan jekyll-seo-tag merupakan cara efektif untuk menjadikan blog Jekyll kamu lebih optimal baik untuk mesin pencari maupun pengunjung. Hanya dengan pengaturan yang sederhana, kamu sudah bisa menikmati fitur-fitur canggih yang membuat blog tampak lebih profesional.</h2>]]></content><author><name></name></author><summary type="html"><![CDATA[Penjelasan tentang Plugins dalam jekyll]]></summary></entry><entry><title type="html">HTML link dan List</title><link href="http://localhost:4000/2025/03/20/html-link-dan-lists.html" rel="alternate" type="text/html" title="HTML link dan List" /><published>2025-03-20T00:00:00+07:00</published><updated>2025-03-20T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/20/html-link-dan-lists</id><content type="html" xml:base="http://localhost:4000/2025/03/20/html-link-dan-lists.html"><![CDATA[<p>Penjelasan tentang link dan lists pada HTML.</p>
 
 <p><img src="/assets/image/images.jpg" alt="Html link dan list" /></p>
 
