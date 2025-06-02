@@ -144,45 +144,8 @@ Menghindari pengulangan deklarasi CSS.
 
 ---
 
-## 6. Studi Kasus Singkat
 
-### Tanpa SCSS:
-```css
-.button {
-  padding: 10px;
-  background-color: #0069d9;
-  border-radius: 5px;
-}
-
-.button-secondary {
-  padding: 10px;
-  background-color: #6c757d;
-  border-radius: 5px;
-}
-```
-
-### Dengan SCSS:
-```scss
-@mixin button-style($color) {
-  padding: 10px;
-  background-color: $color;
-  border-radius: 5px;
-}
-
-.button {
-  @include button-style(#0069d9);
-}
-
-.button-secondary {
-  @include button-style(#6c757d);
-}
-```
-
-Dengan mixin, kode menjadi lebih pendek dan lebih mudah dikelola.
-
----
-
-## 7. Kesimpulan
+## 6. Kesimpulan
 
 SASS/SCSS memberikan banyak kemudahan dalam pengembangan CSS, terutama untuk proyek besar dengan banyak elemen gaya.  
 Keuntungan menggunakan SASS/SCSS antara lain:
