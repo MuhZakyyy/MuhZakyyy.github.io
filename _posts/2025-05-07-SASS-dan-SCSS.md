@@ -144,7 +144,6 @@ Menghindari pengulangan deklarasi CSS.
 
 ---
 
-
 ## 6. Kesimpulan
 
 SASS/SCSS memberikan banyak kemudahan dalam pengembangan CSS, terutama untuk proyek besar dengan banyak elemen gaya.  
