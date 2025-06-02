@@ -18,8 +18,8 @@
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Plugins" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Penjelasan tentang Plugins dalam jekyll" />
-<meta property="og:description" content="Penjelasan tentang Plugins dalam jekyll" />
+<meta name="description" content="🔌 Penjelasan tentang Plugins dalam Jekyll" />
+<meta property="og:description" content="🔌 Penjelasan tentang Plugins dalam Jekyll" />
 <link rel="canonical" href="http://localhost:4000/2025/04/24/Plugins.html" />
 <meta property="og:url" content="http://localhost:4000/2025/04/24/Plugins.html" />
 <meta property="og:type" content="article" />
@@ -27,7 +27,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Plugins" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-24T00:00:00+07:00","datePublished":"2025-04-24T00:00:00+07:00","description":"Penjelasan tentang Plugins dalam jekyll","headline":"Plugins","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/04/24/Plugins.html"},"url":"http://localhost:4000/2025/04/24/Plugins.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-24T00:00:00+07:00","datePublished":"2025-04-24T00:00:00+07:00","description":"🔌 Penjelasan tentang Plugins dalam Jekyll","headline":"Plugins","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/04/24/Plugins.html"},"url":"http://localhost:4000/2025/04/24/Plugins.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -71,11 +71,11 @@
       <h1>Plugins </h1>
 <p>24 Apr 2025  </p>
 
-<p>Penjelasan tentang Plugins dalam jekyll</p>
+<h1 id="-penjelasan-tentang-plugins-dalam-jekyll">🔌 Penjelasan tentang Plugins dalam Jekyll</h1>
 
 <h2 id="-pengertian-plugin">🔍 Pengertian Plugin</h2>
 
-<p><strong>Plugin</strong> adalah sebuah komponen tambahan yang dapat dipasang ke dalam program utama untuk menambahkan fitur atau fungsi tertentu tanpa harus mengubah program aslinya.</p>
+<p><strong>Plugin</strong> adalah komponen tambahan yang dapat dipasang ke dalam program utama untuk menambahkan fitur atau fungsi tertentu tanpa harus mengubah program aslinya.</p>
 
 <p>Dengan kata lain, plugin itu seperti <strong>“alat bantu tambahan”</strong> — kamu bisa memilih sendiri apa yang dibutuhkan tanpa harus memodifikasi keseluruhan sistem.</p>
 
@@ -115,7 +115,7 @@ Membuat file <code class="language-plaintext highlighter-rouge">feed.xml</code> 
 
 <hr />
 
-<h2 id="-3-jekyll-seo-tag">🔍 3. <code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code></h2>
+<h2 id="️-3-jekyll-seo-tag">🏷️ 3. <code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code></h2>
 
 <p><strong>Fungsi</strong>:<br />
 Menambahkan tag SEO secara otomatis ke bagian <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> HTML halaman, termasuk metadata untuk mesin pencari dan media sosial.</p>
@@ -128,37 +128,10 @@ Menambahkan tag SEO secara otomatis ke bagian <code class="language-plaintext hi
 </ul>
 
 <p><strong>Penggunaan</strong>:<br />
-Letakkan tag ini di layout utama kamu (misal <code class="language-plaintext highlighter-rouge">default.html</code>):</p>
+Letakkan tag ini di layout utama kamu (misalnya <code class="language-plaintext highlighter-rouge">default.html</code>):</p>
 
-<p>```liquid
-<!-- Begin Jekyll SEO tag v2.8.0 --></p>
-<title>Plugins</title>
-<meta name="generator" content="Jekyll v4.4.1" />
-
-<meta property="og:title" content="Plugins" />
-
-<meta property="og:locale" content="en_US" />
-
-<meta name="description" content="Penjelasan tentang Plugins dalam jekyll" />
-
-<meta property="og:description" content="Penjelasan tentang Plugins dalam jekyll" />
-
-<link rel="canonical" href="http://localhost:4000/2025/04/24/Plugins.html" />
-
-<meta property="og:url" content="http://localhost:4000/2025/04/24/Plugins.html" />
-
-<meta property="og:type" content="article" />
-
-<meta property="article:published_time" content="2025-04-24T00:00:00+07:00" />
-
-<meta name="twitter:card" content="summary" />
-
-<meta property="twitter:title" content="Plugins" />
-
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-24T00:00:00+07:00","datePublished":"2025-04-24T00:00:00+07:00","description":"Penjelasan tentang Plugins dalam jekyll","headline":"Plugins","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/04/24/Plugins.html"},"url":"http://localhost:4000/2025/04/24/Plugins.html"}</script>
-
-<!-- End Jekyll SEO tag -->
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">seo</span><span class="w"> </span><span class="cp">%}</span>
+</code></pre></div></div>
 
 <hr />
 
@@ -168,34 +141,37 @@ Letakkan tag ini di layout utama kamu (misal <code class="language-plaintext hig
 
 <h3 id="1-tambahkan-ke-gemfile"><strong>1. Tambahkan ke Gemfile</strong></h3>
 
-<p>Edit file <code class="language-plaintext highlighter-rouge">Gemfile</code> dan masukkan baris berikut dalam grup plugin:</p>
+<p>Edit file <code class="language-plaintext highlighter-rouge">Gemfile</code> dan masukkan baris berikut di dalam grup plugin:</p>
 
-<p>```ruby</p>
-<h1 id="tambahkan-plugin-jekyll-di-sini">Tambahkan plugin Jekyll di sini</h1>
-<p>group :jekyll_plugins do
-  gem ‘jekyll-sitemap’
-  gem ‘jekyll-feed’
-  gem ‘jekyll-seo-tag’
-end</p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">group</span> <span class="ss">:jekyll_plugins</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s1">'jekyll-sitemap'</span>
+  <span class="n">gem</span> <span class="s1">'jekyll-feed'</span>
+  <span class="n">gem</span> <span class="s1">'jekyll-seo-tag'</span>
+<span class="k">end</span>
+</code></pre></div></div>
 
 <h3 id="2-instal-plugin"><strong>2. Instal Plugin</strong></h3>
+
 <p>Setelah plugin ditambahkan, jalankan perintah ini di terminal untuk menginstalnya:</p>
 
-<p>bundle install</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">install</span>
+</code></pre></div></div>
 
-<p>Dan pastikan plugins sudah ada di_config.yml:</p>
+<h3 id="3-tambahkan-di-_configyml"><strong>3. Tambahkan di <code class="language-plaintext highlighter-rouge">_config.yml</code></strong></h3>
 
-<p>plugins:</p>
-<ul>
-  <li>jekyll-sitemap</li>
-  <li>jekyll-feed</li>
-  <li>jekyll-seo-tag</li>
-</ul>
+<p>Pastikan semua plugin dicantumkan di file <code class="language-plaintext highlighter-rouge">_config.yml</code>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">plugins</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">jekyll-sitemap</span>
+  <span class="pi">-</span> <span class="s">jekyll-feed</span>
+  <span class="pi">-</span> <span class="s">jekyll-seo-tag</span>
+</code></pre></div></div>
+
+<hr />
 
 <h2 id="-kesimpulan">📝 Kesimpulan</h2>
 
-<h2 id="memanfaatkan-plugin-seperti-jekyll-sitemap-jekyll-feed-dan-jekyll-seo-tag-merupakan-cara-efektif-untuk-menjadikan-blog-jekyll-kamu-lebih-optimal-baik-untuk-mesin-pencari-maupun-pengunjung-hanya-dengan-pengaturan-yang-sederhana-kamu-sudah-bisa-menikmati-fitur-fitur-canggih-yang-membuat-blog-tampak-lebih-profesional">Memanfaatkan plugin seperti jekyll-sitemap, jekyll-feed, dan jekyll-seo-tag merupakan cara efektif untuk menjadikan blog Jekyll kamu lebih optimal baik untuk mesin pencari maupun pengunjung. Hanya dengan pengaturan yang sederhana, kamu sudah bisa menikmati fitur-fitur canggih yang membuat blog tampak lebih profesional.</h2>
-
+<p>Memanfaatkan plugin seperti <code class="language-plaintext highlighter-rouge">jekyll-sitemap</code>, <code class="language-plaintext highlighter-rouge">jekyll-feed</code>, dan <code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code> adalah cara efektif untuk menjadikan blog Jekyll kamu lebih optimal, baik untuk mesin pencari maupun pengunjung. Hanya dengan konfigurasi sederhana, kamu sudah bisa menikmati fitur-fitur canggih yang membuat blog tampak lebih profesional.</p>
 
     </main>
 

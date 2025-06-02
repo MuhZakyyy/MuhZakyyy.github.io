@@ -1,11 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-28T22:01:26+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">materi SASS dan SCSS</title><link href="http://localhost:4000/2025/05/07/SASS-dan-SCSS.html" rel="alternate" type="text/html" title="materi SASS dan SCSS" /><published>2025-05-07T00:00:00+07:00</published><updated>2025-05-07T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/07/SASS-dan-SCSS</id><content type="html" xml:base="http://localhost:4000/2025/05/07/SASS-dan-SCSS.html"><![CDATA[<h1 id="materi-sass-dan-scss">Materi: SASS dan SCSS</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-02T22:40:31+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Materi SASS dan SCSS</title><link href="http://localhost:4000/2025/05/07/SASS-dan-SCSS.html" rel="alternate" type="text/html" title="Materi SASS dan SCSS" /><published>2025-05-07T00:00:00+07:00</published><updated>2025-05-07T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/07/SASS-dan-SCSS</id><content type="html" xml:base="http://localhost:4000/2025/05/07/SASS-dan-SCSS.html"><![CDATA[<h1 id="materi-sass-dan-scss">Materi: SASS dan SCSS</h1>
 
 <h2 id="1-pendahuluan">1. Pendahuluan</h2>
-<p><strong>SASS (Syntactically Awesome Stylesheets)</strong> adalah sebuah preprocessor CSS yang menambahkan fitur seperti variabel, nested rules, mixins, functions, inheritance, dan lain-lain, yang tidak tersedia dalam CSS standar.</p>
+
+<p><strong>SASS (Syntactically Awesome Stylesheets)</strong> adalah sebuah <em>CSS preprocessor</em> yang memungkinkan kita menulis CSS dengan sintaks yang lebih kuat, efisien, dan terstruktur. Dengan menggunakan SASS, kita bisa menambahkan fitur seperti:</p>
+
+<ul>
+  <li><strong>Variabel</strong></li>
+  <li><strong>Nesting</strong> (penulisan kode bersarang)</li>
+  <li><strong>Partials</strong> dan <strong>import</strong></li>
+  <li><strong>Mixins</strong></li>
+  <li><strong>Inheritance</strong></li>
+  <li><strong>Fungsi custom</strong></li>
+</ul>
+
+<p>SASS membantu memecah file CSS menjadi bagian-bagian kecil dan reusable. Hal ini sangat berguna dalam pengembangan front-end skala besar.</p>
 
 <hr />
 
 <h2 id="2-perbedaan-antara-sass-dan-scss">2. Perbedaan antara SASS dan SCSS</h2>
+
+<p>SASS memiliki dua gaya sintaks: <strong>SASS (indented syntax)</strong> dan <strong>SCSS (Sassy CSS)</strong>. Keduanya memiliki fungsi yang sama tetapi cara penulisannya berbeda.</p>
 
 <table>
   <thead>
@@ -17,103 +31,290 @@
   </thead>
   <tbody>
     <tr>
-      <td>Ekstensi</td>
+      <td>Ekstensi File</td>
       <td><code class="language-plaintext highlighter-rouge">.sass</code></td>
       <td><code class="language-plaintext highlighter-rouge">.scss</code></td>
     </tr>
     <tr>
-      <td>Gaya penulisan</td>
+      <td>Gaya Penulisan</td>
       <td>Tanpa <code class="language-plaintext highlighter-rouge">{}</code> dan <code class="language-plaintext highlighter-rouge">;</code></td>
       <td>Menggunakan <code class="language-plaintext highlighter-rouge">{}</code> dan <code class="language-plaintext highlighter-rouge">;</code></td>
     </tr>
     <tr>
-      <td>Sintaks</td>
-      <td>Indentasi seperti Python</td>
-      <td>Mirip CSS biasa</td>
+      <td>Mirip dengan</td>
+      <td>Python atau YAML</td>
+      <td>CSS standar</td>
+    </tr>
+    <tr>
+      <td>Ketersediaan</td>
+      <td>Kurang umum</td>
+      <td>Lebih umum digunakan</td>
+    </tr>
+    <tr>
+      <td>Kompatibilitas</td>
+      <td>Tidak langsung kompatibel CSS</td>
+      <td>Kompatibel penuh dengan CSS</td>
     </tr>
   </tbody>
 </table>
 
 <hr />
-<p><strong>Contoh SASS:</strong>
-```sass
-$primary-color: #333</p>
 
-<p>body
-  font: 100% Helvetica, sans-serif
-  color: $primary-color</p>
+<h2 id="3-contoh-penulisan-kode">3. Contoh Penulisan Kode</h2>
+
+<h3 id="contoh-sass">Contoh SASS:</h3>
+<div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#333</span>
+
+<span class="nt">body</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="m">100%</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="nb">sans-serif</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nv">$primary-color</span>
+</code></pre></div></div>
+
+<h3 id="contoh-scss">Contoh SCSS:</h3>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
+
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="m">100%</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nv">$primary-color</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <hr />
 
-<p><strong>Contoh SCSS:</strong>
-```scss
-$primary-color: #333;</p>
+<h2 id="4-fitur-unggulan">4. Fitur Unggulan</h2>
 
-<p>body {
-  font: 100% Helvetica, sans-serif;
-  color: $primary-color;
-}</p>
+<h3 id="variabel">Variabel</h3>
+<p>Menyimpan nilai warna, ukuran font, atau padding agar dapat digunakan berulang.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$main-color</span><span class="p">:</span> <span class="mh">#0d6efd</span><span class="p">;</span>
+<span class="nv">$spacing</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+
+<span class="nt">button</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$main-color</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="nv">$spacing</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="nesting">Nesting</h3>
+<p>Menulis CSS yang merefleksikan struktur HTML secara hierarki.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">nav</span> <span class="p">{</span>
+  <span class="nt">ul</span> <span class="p">{</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nt">li</span> <span class="p">{</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="partials-dan-import">Partials dan Import</h3>
+<p>Memecah file SCSS menjadi bagian kecil dan di-<em>import</em> ke file utama.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// _variables.scss</span>
+<span class="nv">$base-color</span><span class="p">:</span> <span class="mh">#000</span><span class="p">;</span>
+
+<span class="c1">// main.scss</span>
+<span class="k">@import</span> <span class="s1">'variables'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="mixins">Mixins</h3>
+<p>Fungsi untuk menulis blok CSS yang bisa digunakan kembali.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">border-radius</span><span class="p">(</span><span class="nv">$radius</span><span class="p">)</span> <span class="p">{</span>
+  <span class="na">-webkit-border-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+  <span class="na">-moz-border-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.box</span> <span class="p">{</span> <span class="k">@include</span> <span class="nd">border-radius</span><span class="p">(</span><span class="m">10px</span><span class="p">);</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="inheritance-extend">Inheritance (Extend)</h3>
+<p>Menghindari pengulangan deklarasi CSS.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">%message</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="mh">#ccc</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.success</span> <span class="p">{</span>
+  <span class="k">@extend</span> <span class="nv">%message</span><span class="p">;</span>
+  <span class="nl">border-color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <hr />
 
-<h2 id="kesimpulan">Kesimpulan</h2>
+<h2 id="5-alur-kerja-dengan-sassscss">5. Alur Kerja dengan SASS/SCSS</h2>
 
-<p>SASS dan SCSS membantu pengembang menulis CSS dengan lebih efisien, terstruktur, dan scalable.<br />
-SCSS sangat cocok digunakan karena sintaksnya mirip dengan CSS biasa.<br />
-Dengan fitur seperti variabel, nesting, mixins, dan modularisasi, pengelolaan gaya dalam proyek menjadi lebih cepat dan efisien.</p>
+<ol>
+  <li>Instalasi SASS:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">-g</span> sass
+</code></pre></div>    </div>
+  </li>
+  <li>Kompilasi SCSS ke CSS:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sass style.scss style.css
+</code></pre></div>    </div>
+  </li>
+  <li>Gunakan file CSS hasil kompilasi di dalam HTML.</li>
+</ol>
 
-<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[Materi: SASS dan SCSS]]></summary></entry><entry><title type="html">Belajar config yml</title><link href="http://localhost:4000/2025/04/24/config-yml.html" rel="alternate" type="text/html" title="Belajar config yml" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/config-yml</id><content type="html" xml:base="http://localhost:4000/2025/04/24/config-yml.html"><![CDATA[<h3 id="keterangan">Keterangan</h3>
+<hr />
+
+<h2 id="6-studi-kasus-singkat">6. Studi Kasus Singkat</h2>
+
+<h3 id="tanpa-scss">Tanpa SCSS:</h3>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.button</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#0069d9</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.button-secondary</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#6c757d</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="dengan-scss">Dengan SCSS:</h3>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">button-style</span><span class="p">(</span><span class="nv">$color</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$color</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.button</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">button-style</span><span class="p">(</span><span class="mh">#0069d9</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.button-secondary</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">button-style</span><span class="p">(</span><span class="mh">#6c757d</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Dengan mixin, kode menjadi lebih pendek dan lebih mudah dikelola.</p>
+
+<hr />
+
+<h2 id="7-kesimpulan">7. Kesimpulan</h2>
+
+<p>SASS/SCSS memberikan banyak kemudahan dalam pengembangan CSS, terutama untuk proyek besar dengan banyak elemen gaya.<br />
+Keuntungan menggunakan SASS/SCSS antara lain:</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">title</code>, <code class="language-plaintext highlighter-rouge">description</code>, <code class="language-plaintext highlighter-rouge">author</code>, dan <code class="language-plaintext highlighter-rouge">theme</code> adalah <strong>key</strong></li>
-  <li>Nilai setelah tanda <code class="language-plaintext highlighter-rouge">:</code> adalah <strong>value</strong></li>
+  <li>Penulisan kode yang lebih modular dan reusable.</li>
+  <li>Meminimalisir pengulangan.</li>
+  <li>Meningkatkan keterbacaan dan maintainability.</li>
+  <li>Kompatibel dengan CSS, terutama SCSS.</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi: SASS dan SCSS]]></summary></entry><entry><title type="html">config yml</title><link href="http://localhost:4000/2025/04/24/config-yml.html" rel="alternate" type="text/html" title="config yml" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/config-yml</id><content type="html" xml:base="http://localhost:4000/2025/04/24/config-yml.html"><![CDATA[<h1 id="-panduan-lengkap-configyml">📘 Panduan Lengkap: config.yml</h1>
+
+<h2 id="keterangan-dasar">Keterangan Dasar</h2>
+
+<p>File <code class="language-plaintext highlighter-rouge">config.yml</code> biasanya digunakan dalam berbagai proyek untuk menyimpan pengaturan dan konfigurasi. Contoh proyek yang menggunakan file ini termasuk:</p>
+
+<ul>
+  <li><strong>Jekyll</strong></li>
+  <li><strong>Netlify</strong></li>
+  <li><strong>GitHub Actions</strong></li>
+  <li><strong>Docker Compose</strong></li>
+  <li><strong>CI/CD Tools</strong></li>
+</ul>
+
+<h3 id="struktur-dasar">Struktur Dasar</h3>
+
+<ul>
+  <li><strong>Key</strong>: Penanda atau atribut utama (contoh: <code class="language-plaintext highlighter-rouge">title</code>, <code class="language-plaintext highlighter-rouge">theme</code>)</li>
+  <li><strong>Value</strong>: Nilai yang diberikan untuk key tersebut</li>
+  <li>Format: <code class="language-plaintext highlighter-rouge">key: value</code></li>
+  <li><strong>Indentasi sangat penting!</strong> (menggunakan spasi, bukan tab)</li>
 </ul>
 
 <hr />
+
+<h2 id="-contoh-struktur-yaml">📂 Contoh Struktur YAML</h2>
+
+<h3 id="-contoh-konfigurasi-umum">🔹 Contoh Konfigurasi Umum</h3>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">Belajar YAML</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">Panduan pemula untuk memahami file .yml</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s">Muhammad Zaky</span>
+<span class="na">theme</span><span class="pi">:</span> <span class="s">minima</span>
+</code></pre></div></div>
 
 <h3 id="contoh-nested-struktur-bertingkat">Contoh Nested (Struktur Bertingkat)</h3>
 
-<p>```yml
-user:
-  name: Muhammad Zaky
-  email: Muhammadzaky@example.com</p>
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">user</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">Muhammad Zaky</span>
+  <span class="na">email</span><span class="pi">:</span> <span class="s">zaky@example.com</span>
+  <span class="na">social</span><span class="pi">:</span>
+    <span class="na">github</span><span class="pi">:</span> <span class="s">zakygithub</span>
+</code></pre></div></div>
+
+<h3 id="-contoh-listarray-dalam-yaml">🔹 Contoh List/Array dalam YAML</h3>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">skills</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">HTML</span>
+  <span class="pi">-</span> <span class="s">CSS</span>
+  <span class="pi">-</span> <span class="s">JavaScript</span>
+  <span class="pi">-</span> <span class="s">Python</span>
+  <span class="pi">-</span> <span class="s">Ruby</span>
+</code></pre></div></div>
 
 <hr />
 
-<h3 id="contoh-listarray-dalam-yml">Contoh List/Array dalam YML</h3>
+<h2 id="️-contoh-configyml-dalam-proyek-jekyll">⚙️ Contoh <code class="language-plaintext highlighter-rouge">config.yml</code> dalam Proyek Jekyll</h2>
 
-<p>```yml
-skills:</p>
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">My Blog</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">Ini adalah blog pribadi saya.</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s">Zaky</span>
+<span class="na">theme</span><span class="pi">:</span> <span class="s">minima</span>
+
+<span class="na">plugins</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">jekyll-feed</span>
+  <span class="pi">-</span> <span class="s">jekyll-sitemap</span>
+  <span class="pi">-</span> <span class="s">jekyll-seo-tag</span>
+
+<span class="na">social_links</span><span class="pi">:</span>
+  <span class="na">github</span><span class="pi">:</span> <span class="s">https://github.com/zaky</span>
+</code></pre></div></div>
+
+<h3 id="penjelasan">Penjelasan</h3>
+
 <ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript</li>
-  <li>Python</li>
+  <li><code class="language-plaintext highlighter-rouge">theme</code>: Tema yang digunakan (misalnya <code class="language-plaintext highlighter-rouge">minima</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">plugins</code>: List plugin yang digunakan dalam proyek Jekyll</li>
+  <li><code class="language-plaintext highlighter-rouge">social_links</code>: Contoh struktur nested untuk tautan sosial media</li>
 </ul>
 
 <hr />
 
-<h3 id="-kesimpulan">✅ Kesimpulan</h3>
+<h2 id="saran-dalam-menggunakan-yml">Saran Dalam Menggunakan YML</h2>
 
 <ul>
-  <li>File <code class="language-plaintext highlighter-rouge">.yml</code> adalah bagian penting dalam pengaturan konfigurasi banyak proyek modern.</li>
-  <li>Format ini ringan, mudah dibaca, namun <strong>sensitif terhadap indentasi</strong>.</li>
-  <li>Memahami YAML sangat membantu saat bekerja dengan:
-    <ul>
-      <li><strong>Jekyll</strong></li>
-      <li><strong>GitHub Actions</strong></li>
-      <li><strong>Netlify</strong></li>
-      <li><strong>Docker</strong></li>
-      <li><strong>CI/CD tools</strong> lainnya</li>
-    </ul>
-  </li>
+  <li>Gunakan <strong>spasi</strong> (bukan tab!) untuk indentasi</li>
+  <li>Format <code class="language-plaintext highlighter-rouge">.yml</code> sangat <strong>sensitif terhadap kesalahan format</strong></li>
+  <li>Jika terjadi kesalahan parsing, periksa indentasi dan tanda baca</li>
+  <li>Jangan ada karakter atau simbol aneh tanpa kutipan (<code class="language-plaintext highlighter-rouge">" "</code> atau <code class="language-plaintext highlighter-rouge">' '</code>)</li>
 </ul>
 
-<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[Keterangan]]></summary></entry><entry><title type="html">Plugins</title><link href="http://localhost:4000/2025/04/24/Plugins.html" rel="alternate" type="text/html" title="Plugins" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/Plugins</id><content type="html" xml:base="http://localhost:4000/2025/04/24/Plugins.html"><![CDATA[<p>Penjelasan tentang Plugins dalam jekyll</p>
+<hr />
+
+<h2 id="-kesimpulan">🧾 Kesimpulan</h2>
+
+<p>File <code class="language-plaintext highlighter-rouge">.yml</code> adalah bagian penting dalam pengaturan proyek modern karena:</p>
+
+<ul>
+  <li>Ringan dan mudah dibaca manusia</li>
+  <li>Mendukung struktur data kompleks (nested, list, boolean)</li>
+  <li>Sangat berguna dalam banyak ekosistem pengembangan seperti Jekyll, GitHub Actions, Docker, dan CI/CD pipeline</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[📘 Panduan Lengkap: config.yml]]></summary></entry><entry><title type="html">Plugins</title><link href="http://localhost:4000/2025/04/24/Plugins.html" rel="alternate" type="text/html" title="Plugins" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/Plugins</id><content type="html" xml:base="http://localhost:4000/2025/04/24/Plugins.html"><![CDATA[<h1 id="-penjelasan-tentang-plugins-dalam-jekyll">🔌 Penjelasan tentang Plugins dalam Jekyll</h1>
 
 <h2 id="-pengertian-plugin">🔍 Pengertian Plugin</h2>
 
-<p><strong>Plugin</strong> adalah sebuah komponen tambahan yang dapat dipasang ke dalam program utama untuk menambahkan fitur atau fungsi tertentu tanpa harus mengubah program aslinya.</p>
+<p><strong>Plugin</strong> adalah komponen tambahan yang dapat dipasang ke dalam program utama untuk menambahkan fitur atau fungsi tertentu tanpa harus mengubah program aslinya.</p>
 
 <p>Dengan kata lain, plugin itu seperti <strong>“alat bantu tambahan”</strong> — kamu bisa memilih sendiri apa yang dibutuhkan tanpa harus memodifikasi keseluruhan sistem.</p>
 
@@ -153,7 +354,7 @@ Membuat file <code class="language-plaintext highlighter-rouge">feed.xml</code> 
 
 <hr />
 
-<h2 id="-3-jekyll-seo-tag">🔍 3. <code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code></h2>
+<h2 id="️-3-jekyll-seo-tag">🏷️ 3. <code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code></h2>
 
 <p><strong>Fungsi</strong>:<br />
 Menambahkan tag SEO secara otomatis ke bagian <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> HTML halaman, termasuk metadata untuk mesin pencari dan media sosial.</p>
@@ -166,37 +367,10 @@ Menambahkan tag SEO secara otomatis ke bagian <code class="language-plaintext hi
 </ul>
 
 <p><strong>Penggunaan</strong>:<br />
-Letakkan tag ini di layout utama kamu (misal <code class="language-plaintext highlighter-rouge">default.html</code>):</p>
+Letakkan tag ini di layout utama kamu (misalnya <code class="language-plaintext highlighter-rouge">default.html</code>):</p>
 
-<p>```liquid
-<!-- Begin Jekyll SEO tag v2.8.0 --></p>
-<title>Plugins</title>
-<meta name="generator" content="Jekyll v4.4.1" />
-
-<meta property="og:title" content="Plugins" />
-
-<meta property="og:locale" content="en_US" />
-
-<meta name="description" content="Penjelasan tentang Plugins dalam jekyll" />
-
-<meta property="og:description" content="Penjelasan tentang Plugins dalam jekyll" />
-
-<link rel="canonical" href="http://localhost:4000/2025/04/24/Plugins.html" />
-
-<meta property="og:url" content="http://localhost:4000/2025/04/24/Plugins.html" />
-
-<meta property="og:type" content="article" />
-
-<meta property="article:published_time" content="2025-04-24T00:00:00+07:00" />
-
-<meta name="twitter:card" content="summary" />
-
-<meta property="twitter:title" content="Plugins" />
-
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-24T00:00:00+07:00","datePublished":"2025-04-24T00:00:00+07:00","description":"Penjelasan tentang Plugins dalam jekyll","headline":"Plugins","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/04/24/Plugins.html"},"url":"http://localhost:4000/2025/04/24/Plugins.html"}</script>
-
-<!-- End Jekyll SEO tag -->
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">seo</span><span class="w"> </span><span class="cp">%}</span>
+</code></pre></div></div>
 
 <hr />
 
@@ -206,33 +380,37 @@ Letakkan tag ini di layout utama kamu (misal <code class="language-plaintext hig
 
 <h3 id="1-tambahkan-ke-gemfile"><strong>1. Tambahkan ke Gemfile</strong></h3>
 
-<p>Edit file <code class="language-plaintext highlighter-rouge">Gemfile</code> dan masukkan baris berikut dalam grup plugin:</p>
+<p>Edit file <code class="language-plaintext highlighter-rouge">Gemfile</code> dan masukkan baris berikut di dalam grup plugin:</p>
 
-<p>```ruby</p>
-<h1 id="tambahkan-plugin-jekyll-di-sini">Tambahkan plugin Jekyll di sini</h1>
-<p>group :jekyll_plugins do
-  gem ‘jekyll-sitemap’
-  gem ‘jekyll-feed’
-  gem ‘jekyll-seo-tag’
-end</p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">group</span> <span class="ss">:jekyll_plugins</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s1">'jekyll-sitemap'</span>
+  <span class="n">gem</span> <span class="s1">'jekyll-feed'</span>
+  <span class="n">gem</span> <span class="s1">'jekyll-seo-tag'</span>
+<span class="k">end</span>
+</code></pre></div></div>
 
 <h3 id="2-instal-plugin"><strong>2. Instal Plugin</strong></h3>
+
 <p>Setelah plugin ditambahkan, jalankan perintah ini di terminal untuk menginstalnya:</p>
 
-<p>bundle install</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">install</span>
+</code></pre></div></div>
 
-<p>Dan pastikan plugins sudah ada di_config.yml:</p>
+<h3 id="3-tambahkan-di-_configyml"><strong>3. Tambahkan di <code class="language-plaintext highlighter-rouge">_config.yml</code></strong></h3>
 
-<p>plugins:</p>
-<ul>
-  <li>jekyll-sitemap</li>
-  <li>jekyll-feed</li>
-  <li>jekyll-seo-tag</li>
-</ul>
+<p>Pastikan semua plugin dicantumkan di file <code class="language-plaintext highlighter-rouge">_config.yml</code>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">plugins</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">jekyll-sitemap</span>
+  <span class="pi">-</span> <span class="s">jekyll-feed</span>
+  <span class="pi">-</span> <span class="s">jekyll-seo-tag</span>
+</code></pre></div></div>
+
+<hr />
 
 <h2 id="-kesimpulan">📝 Kesimpulan</h2>
 
-<h2 id="memanfaatkan-plugin-seperti-jekyll-sitemap-jekyll-feed-dan-jekyll-seo-tag-merupakan-cara-efektif-untuk-menjadikan-blog-jekyll-kamu-lebih-optimal-baik-untuk-mesin-pencari-maupun-pengunjung-hanya-dengan-pengaturan-yang-sederhana-kamu-sudah-bisa-menikmati-fitur-fitur-canggih-yang-membuat-blog-tampak-lebih-profesional">Memanfaatkan plugin seperti jekyll-sitemap, jekyll-feed, dan jekyll-seo-tag merupakan cara efektif untuk menjadikan blog Jekyll kamu lebih optimal baik untuk mesin pencari maupun pengunjung. Hanya dengan pengaturan yang sederhana, kamu sudah bisa menikmati fitur-fitur canggih yang membuat blog tampak lebih profesional.</h2>]]></content><author><name></name></author><summary type="html"><![CDATA[Penjelasan tentang Plugins dalam jekyll]]></summary></entry><entry><title type="html">HTML link dan List</title><link href="http://localhost:4000/2025/03/20/html-link-dan-lists.html" rel="alternate" type="text/html" title="HTML link dan List" /><published>2025-03-20T00:00:00+07:00</published><updated>2025-03-20T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/20/html-link-dan-lists</id><content type="html" xml:base="http://localhost:4000/2025/03/20/html-link-dan-lists.html"><![CDATA[<p>Penjelasan tentang link dan lists pada HTML.</p>
+<p>Memanfaatkan plugin seperti <code class="language-plaintext highlighter-rouge">jekyll-sitemap</code>, <code class="language-plaintext highlighter-rouge">jekyll-feed</code>, dan <code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code> adalah cara efektif untuk menjadikan blog Jekyll kamu lebih optimal, baik untuk mesin pencari maupun pengunjung. Hanya dengan konfigurasi sederhana, kamu sudah bisa menikmati fitur-fitur canggih yang membuat blog tampak lebih profesional.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[🔌 Penjelasan tentang Plugins dalam Jekyll]]></summary></entry><entry><title type="html">HTML link dan List</title><link href="http://localhost:4000/2025/03/20/html-link-dan-lists.html" rel="alternate" type="text/html" title="HTML link dan List" /><published>2025-03-20T00:00:00+07:00</published><updated>2025-03-20T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/20/html-link-dan-lists</id><content type="html" xml:base="http://localhost:4000/2025/03/20/html-link-dan-lists.html"><![CDATA[<p>Penjelasan tentang link dan lists pada HTML.</p>
 
 <p><img src="/assets/image/images.jpg" alt="Html link dan list" /></p>
 

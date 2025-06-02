@@ -1,7 +1,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>materi SASS dan SCSS</title>
+  <title>Materi SASS dan SCSS</title>
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="/assets/css/styles.css">
@@ -14,9 +14,9 @@
 
   <!-- Plugins -->
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>materi SASS dan SCSS</title>
+<title>Materi SASS dan SCSS</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="materi SASS dan SCSS" />
+<meta property="og:title" content="Materi SASS dan SCSS" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Materi: SASS dan SCSS" />
 <meta property="og:description" content="Materi: SASS dan SCSS" />
@@ -25,9 +25,9 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2025-05-07T00:00:00+07:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="materi SASS dan SCSS" />
+<meta property="twitter:title" content="Materi SASS dan SCSS" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-07T00:00:00+07:00","datePublished":"2025-05-07T00:00:00+07:00","description":"Materi: SASS dan SCSS","headline":"materi SASS dan SCSS","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/05/07/SASS-dan-SCSS.html"},"url":"http://localhost:4000/2025/05/07/SASS-dan-SCSS.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-07T00:00:00+07:00","datePublished":"2025-05-07T00:00:00+07:00","description":"Materi: SASS dan SCSS","headline":"Materi SASS dan SCSS","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/05/07/SASS-dan-SCSS.html"},"url":"http://localhost:4000/2025/05/07/SASS-dan-SCSS.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -68,17 +68,31 @@
     </nav>
 
     <main>
-      <h1>materi SASS dan SCSS </h1>
+      <h1>Materi SASS dan SCSS </h1>
 <p>07 May 2025  </p>
 
 <h1 id="materi-sass-dan-scss">Materi: SASS dan SCSS</h1>
 
 <h2 id="1-pendahuluan">1. Pendahuluan</h2>
-<p><strong>SASS (Syntactically Awesome Stylesheets)</strong> adalah sebuah preprocessor CSS yang menambahkan fitur seperti variabel, nested rules, mixins, functions, inheritance, dan lain-lain, yang tidak tersedia dalam CSS standar.</p>
+
+<p><strong>SASS (Syntactically Awesome Stylesheets)</strong> adalah sebuah <em>CSS preprocessor</em> yang memungkinkan kita menulis CSS dengan sintaks yang lebih kuat, efisien, dan terstruktur. Dengan menggunakan SASS, kita bisa menambahkan fitur seperti:</p>
+
+<ul>
+  <li><strong>Variabel</strong></li>
+  <li><strong>Nesting</strong> (penulisan kode bersarang)</li>
+  <li><strong>Partials</strong> dan <strong>import</strong></li>
+  <li><strong>Mixins</strong></li>
+  <li><strong>Inheritance</strong></li>
+  <li><strong>Fungsi custom</strong></li>
+</ul>
+
+<p>SASS membantu memecah file CSS menjadi bagian-bagian kecil dan reusable. Hal ini sangat berguna dalam pengembangan front-end skala besar.</p>
 
 <hr />
 
 <h2 id="2-perbedaan-antara-sass-dan-scss">2. Perbedaan antara SASS dan SCSS</h2>
+
+<p>SASS memiliki dua gaya sintaks: <strong>SASS (indented syntax)</strong> dan <strong>SCSS (Sassy CSS)</strong>. Keduanya memiliki fungsi yang sama tetapi cara penulisannya berbeda.</p>
 
 <table>
   <thead>
@@ -90,52 +104,185 @@
   </thead>
   <tbody>
     <tr>
-      <td>Ekstensi</td>
+      <td>Ekstensi File</td>
       <td><code class="language-plaintext highlighter-rouge">.sass</code></td>
       <td><code class="language-plaintext highlighter-rouge">.scss</code></td>
     </tr>
     <tr>
-      <td>Gaya penulisan</td>
+      <td>Gaya Penulisan</td>
       <td>Tanpa <code class="language-plaintext highlighter-rouge">{}</code> dan <code class="language-plaintext highlighter-rouge">;</code></td>
       <td>Menggunakan <code class="language-plaintext highlighter-rouge">{}</code> dan <code class="language-plaintext highlighter-rouge">;</code></td>
     </tr>
     <tr>
-      <td>Sintaks</td>
-      <td>Indentasi seperti Python</td>
-      <td>Mirip CSS biasa</td>
+      <td>Mirip dengan</td>
+      <td>Python atau YAML</td>
+      <td>CSS standar</td>
+    </tr>
+    <tr>
+      <td>Ketersediaan</td>
+      <td>Kurang umum</td>
+      <td>Lebih umum digunakan</td>
+    </tr>
+    <tr>
+      <td>Kompatibilitas</td>
+      <td>Tidak langsung kompatibel CSS</td>
+      <td>Kompatibel penuh dengan CSS</td>
     </tr>
   </tbody>
 </table>
 
 <hr />
-<p><strong>Contoh SASS:</strong>
-```sass
-$primary-color: #333</p>
 
-<p>body
-  font: 100% Helvetica, sans-serif
-  color: $primary-color</p>
+<h2 id="3-contoh-penulisan-kode">3. Contoh Penulisan Kode</h2>
+
+<h3 id="contoh-sass">Contoh SASS:</h3>
+<div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#333</span>
+
+<span class="nt">body</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="m">100%</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="nb">sans-serif</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nv">$primary-color</span>
+</code></pre></div></div>
+
+<h3 id="contoh-scss">Contoh SCSS:</h3>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
+
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="m">100%</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nv">$primary-color</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="4-fitur-unggulan">4. Fitur Unggulan</h2>
+
+<h3 id="variabel">Variabel</h3>
+<p>Menyimpan nilai warna, ukuran font, atau padding agar dapat digunakan berulang.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$main-color</span><span class="p">:</span> <span class="mh">#0d6efd</span><span class="p">;</span>
+<span class="nv">$spacing</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+
+<span class="nt">button</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$main-color</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="nv">$spacing</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="nesting">Nesting</h3>
+<p>Menulis CSS yang merefleksikan struktur HTML secara hierarki.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">nav</span> <span class="p">{</span>
+  <span class="nt">ul</span> <span class="p">{</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nt">li</span> <span class="p">{</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="partials-dan-import">Partials dan Import</h3>
+<p>Memecah file SCSS menjadi bagian kecil dan di-<em>import</em> ke file utama.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// _variables.scss</span>
+<span class="nv">$base-color</span><span class="p">:</span> <span class="mh">#000</span><span class="p">;</span>
+
+<span class="c1">// main.scss</span>
+<span class="k">@import</span> <span class="s1">'variables'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="mixins">Mixins</h3>
+<p>Fungsi untuk menulis blok CSS yang bisa digunakan kembali.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">border-radius</span><span class="p">(</span><span class="nv">$radius</span><span class="p">)</span> <span class="p">{</span>
+  <span class="na">-webkit-border-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+  <span class="na">-moz-border-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.box</span> <span class="p">{</span> <span class="k">@include</span> <span class="nd">border-radius</span><span class="p">(</span><span class="m">10px</span><span class="p">);</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="inheritance-extend">Inheritance (Extend)</h3>
+<p>Menghindari pengulangan deklarasi CSS.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">%message</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="mh">#ccc</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.success</span> <span class="p">{</span>
+  <span class="k">@extend</span> <span class="nv">%message</span><span class="p">;</span>
+  <span class="nl">border-color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <hr />
 
-<p><strong>Contoh SCSS:</strong>
-```scss
-$primary-color: #333;</p>
+<h2 id="5-alur-kerja-dengan-sassscss">5. Alur Kerja dengan SASS/SCSS</h2>
 
-<p>body {
-  font: 100% Helvetica, sans-serif;
-  color: $primary-color;
-}</p>
+<ol>
+  <li>Instalasi SASS:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">-g</span> sass
+</code></pre></div>    </div>
+  </li>
+  <li>Kompilasi SCSS ke CSS:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sass style.scss style.css
+</code></pre></div>    </div>
+  </li>
+  <li>Gunakan file CSS hasil kompilasi di dalam HTML.</li>
+</ol>
+
+<hr />
+
+<h2 id="6-studi-kasus-singkat">6. Studi Kasus Singkat</h2>
+
+<h3 id="tanpa-scss">Tanpa SCSS:</h3>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.button</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#0069d9</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.button-secondary</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#6c757d</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="dengan-scss">Dengan SCSS:</h3>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">button-style</span><span class="p">(</span><span class="nv">$color</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$color</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.button</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">button-style</span><span class="p">(</span><span class="mh">#0069d9</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.button-secondary</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">button-style</span><span class="p">(</span><span class="mh">#6c757d</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Dengan mixin, kode menjadi lebih pendek dan lebih mudah dikelola.</p>
 
 <hr />
 
-<h2 id="kesimpulan">Kesimpulan</h2>
+<h2 id="7-kesimpulan">7. Kesimpulan</h2>
 
-<p>SASS dan SCSS membantu pengembang menulis CSS dengan lebih efisien, terstruktur, dan scalable.<br />
-SCSS sangat cocok digunakan karena sintaksnya mirip dengan CSS biasa.<br />
-Dengan fitur seperti variabel, nesting, mixins, dan modularisasi, pengelolaan gaya dalam proyek menjadi lebih cepat dan efisien.</p>
+<p>SASS/SCSS memberikan banyak kemudahan dalam pengembangan CSS, terutama untuk proyek besar dengan banyak elemen gaya.<br />
+Keuntungan menggunakan SASS/SCSS antara lain:</p>
 
-<hr />
+<ul>
+  <li>Penulisan kode yang lebih modular dan reusable.</li>
+  <li>Meminimalisir pengulangan.</li>
+  <li>Meningkatkan keterbacaan dan maintainability.</li>
+  <li>Kompatibel dengan CSS, terutama SCSS.</li>
+</ul>
 
     </main>
 

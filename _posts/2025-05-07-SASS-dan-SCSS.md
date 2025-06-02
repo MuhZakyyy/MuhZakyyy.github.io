@@ -1,34 +1,51 @@
 ---
 layout: post
-title: materi SASS dan SCSS
+title: Materi SASS dan SCSS
 ---
+
 # Materi: SASS dan SCSS
 
 ## 1. Pendahuluan
-**SASS (Syntactically Awesome Stylesheets)** adalah sebuah preprocessor CSS yang menambahkan fitur seperti variabel, nested rules, mixins, functions, inheritance, dan lain-lain, yang tidak tersedia dalam CSS standar.
+
+**SASS (Syntactically Awesome Stylesheets)** adalah sebuah *CSS preprocessor* yang memungkinkan kita menulis CSS dengan sintaks yang lebih kuat, efisien, dan terstruktur. Dengan menggunakan SASS, kita bisa menambahkan fitur seperti:
+
+- **Variabel**
+- **Nesting** (penulisan kode bersarang)
+- **Partials** dan **import**
+- **Mixins**
+- **Inheritance**
+- **Fungsi custom**
+
+SASS membantu memecah file CSS menjadi bagian-bagian kecil dan reusable. Hal ini sangat berguna dalam pengembangan front-end skala besar.
 
 ---
 
 ## 2. Perbedaan antara SASS dan SCSS
 
-| Fitur        | SASS              | SCSS                 |
-|--------------|-------------------|----------------------|
-| Ekstensi     | `.sass`           | `.scss`              |
-| Gaya penulisan | Tanpa `{}` dan `;` | Menggunakan `{}` dan `;` |
-| Sintaks      | Indentasi seperti Python | Mirip CSS biasa     |
+SASS memiliki dua gaya sintaks: **SASS (indented syntax)** dan **SCSS (Sassy CSS)**. Keduanya memiliki fungsi yang sama tetapi cara penulisannya berbeda.
+
+| Fitur           | SASS                          | SCSS                           |
+|------------------|-------------------------------|--------------------------------|
+| Ekstensi File     | `.sass`                        | `.scss`                         |
+| Gaya Penulisan    | Tanpa `{}` dan `;`              | Menggunakan `{}` dan `;`         |
+| Mirip dengan      | Python atau YAML                | CSS standar                     |
+| Ketersediaan      | Kurang umum                    | Lebih umum digunakan            |
+| Kompatibilitas    | Tidak langsung kompatibel CSS  | Kompatibel penuh dengan CSS     |
 
 ---
-**Contoh SASS:**
+
+## 3. Contoh Penulisan Kode
+
+### Contoh SASS:
 ```sass
 $primary-color: #333
 
 body
   font: 100% Helvetica, sans-serif
   color: $primary-color
+```
 
----
-
-**Contoh SCSS:**
+### Contoh SCSS:
 ```scss
 $primary-color: #333;
 
@@ -36,13 +53,141 @@ body {
   font: 100% Helvetica, sans-serif;
   color: $primary-color;
 }
- 
----
-
-## Kesimpulan
-
-SASS dan SCSS membantu pengembang menulis CSS dengan lebih efisien, terstruktur, dan scalable.  
-SCSS sangat cocok digunakan karena sintaksnya mirip dengan CSS biasa.  
-Dengan fitur seperti variabel, nesting, mixins, dan modularisasi, pengelolaan gaya dalam proyek menjadi lebih cepat dan efisien.
+```
 
 ---
+
+## 4. Fitur Unggulan
+
+###  Variabel
+Menyimpan nilai warna, ukuran font, atau padding agar dapat digunakan berulang.
+
+```scss
+$main-color: #0d6efd;
+$spacing: 16px;
+
+button {
+  background-color: $main-color;
+  padding: $spacing;
+}
+```
+
+###  Nesting
+Menulis CSS yang merefleksikan struktur HTML secara hierarki.
+
+```scss
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+    }
+  }
+}
+```
+
+###  Partials dan Import
+Memecah file SCSS menjadi bagian kecil dan di-*import* ke file utama.
+
+```scss
+// _variables.scss
+$base-color: #000;
+
+// main.scss
+@import 'variables';
+```
+
+###  Mixins
+Fungsi untuk menulis blok CSS yang bisa digunakan kembali.
+
+```scss
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.box { @include border-radius(10px); }
+```
+
+###  Inheritance (Extend)
+Menghindari pengulangan deklarasi CSS.
+
+```scss
+%message {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.success {
+  @extend %message;
+  border-color: green;
+}
+```
+
+---
+
+## 5. Alur Kerja dengan SASS/SCSS
+
+1. Instalasi SASS:
+   ```bash
+   npm install -g sass
+   ```
+
+2. Kompilasi SCSS ke CSS:
+   ```bash
+   sass style.scss style.css
+   ```
+
+3. Gunakan file CSS hasil kompilasi di dalam HTML.
+
+---
+
+## 6. Studi Kasus Singkat
+
+### Tanpa SCSS:
+```css
+.button {
+  padding: 10px;
+  background-color: #0069d9;
+  border-radius: 5px;
+}
+
+.button-secondary {
+  padding: 10px;
+  background-color: #6c757d;
+  border-radius: 5px;
+}
+```
+
+### Dengan SCSS:
+```scss
+@mixin button-style($color) {
+  padding: 10px;
+  background-color: $color;
+  border-radius: 5px;
+}
+
+.button {
+  @include button-style(#0069d9);
+}
+
+.button-secondary {
+  @include button-style(#6c757d);
+}
+```
+
+Dengan mixin, kode menjadi lebih pendek dan lebih mudah dikelola.
+
+---
+
+## 7. Kesimpulan
+
+SASS/SCSS memberikan banyak kemudahan dalam pengembangan CSS, terutama untuk proyek besar dengan banyak elemen gaya.  
+Keuntungan menggunakan SASS/SCSS antara lain:
+
+- Penulisan kode yang lebih modular dan reusable.
+- Meminimalisir pengulangan.
+- Meningkatkan keterbacaan dan maintainability.
+- Kompatibel dengan CSS, terutama SCSS.
