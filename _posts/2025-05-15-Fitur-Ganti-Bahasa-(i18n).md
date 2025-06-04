@@ -3,8 +3,6 @@ layout: post
 title: "Fitur Ganti Bahasa (i18n) dalam Web"
 ---
 
-##  Fitur Ganti Bahasa (Internationalization - i18n)
-
 ## 📘 Apa itu i18n?
 
 **i18n** adalah singkatan dari *internationalization* (terdiri dari 18 huruf antara 'i' dan 'n'), yaitu proses mendesain software agar mudah disesuaikan dengan berbagai bahasa dan wilayah tanpa harus mengubah source code.
