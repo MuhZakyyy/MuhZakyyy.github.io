@@ -1,4 +1,165 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-02T22:40:31+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Materi SASS dan SCSS</title><link href="http://localhost:4000/2025/05/07/SASS-dan-SCSS.html" rel="alternate" type="text/html" title="Materi SASS dan SCSS" /><published>2025-05-07T00:00:00+07:00</published><updated>2025-05-07T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/07/SASS-dan-SCSS</id><content type="html" xml:base="http://localhost:4000/2025/05/07/SASS-dan-SCSS.html"><![CDATA[<h1 id="materi-sass-dan-scss">Materi: SASS dan SCSS</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-04T10:48:08+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Halaman Web Responsif</title><link href="http://localhost:4000/2025/05/22/Halaman-Web-Responsif.html" rel="alternate" type="text/html" title="Halaman Web Responsif" /><published>2025-05-22T00:00:00+07:00</published><updated>2025-05-22T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/22/Halaman-Web-Responsif</id><content type="html" xml:base="http://localhost:4000/2025/05/22/Halaman-Web-Responsif.html"><![CDATA[<h2 id="1-apa-itu-web-responsif">1. Apa itu Web Responsif?</h2>
+
+<p><strong>Halaman web responsif</strong> adalah halaman yang mampu menyesuaikan tampilan dan tata letaknya sesuai dengan ukuran layar dan perangkat pengguna seperti smartphone, tablet, atau desktop.</p>
+
+<p>Tujuannya adalah agar pengalaman pengguna tetap optimal di berbagai perangkat.</p>
+
+<hr />
+
+<h2 id="2-mengapa-responsif-penting">2. Mengapa Responsif Penting?</h2>
+
+<ul>
+  <li>Pengguna kini mengakses web dari berbagai ukuran layar</li>
+  <li>Google mengutamakan situs yang responsif dalam hasil pencarian (SEO)</li>
+  <li>Desain yang konsisten dan ramah pengguna</li>
+</ul>
+
+<hr />
+
+<h2 id="3-teknik-responsif">3. Teknik Responsif</h2>
+
+<h3 id="media-queries-css">Media Queries (CSS)</h3>
+
+<p>Media queries memungkinkan kita untuk menerapkan gaya berbeda berdasarkan ukuran layar:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Untuk layar kecil (mobile) */</span>
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">600px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">body</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="persentase-dan-satuan-fleksibel">Persentase dan Satuan Fleksibel</h3>
+
+<p>Gunakan <code class="language-plaintext highlighter-rouge">width: 100%</code>, <code class="language-plaintext highlighter-rouge">em</code>, <code class="language-plaintext highlighter-rouge">rem</code>, dan unit relatif lainnya agar elemen dapat menyesuaikan ukuran.</p>
+
+<h3 id="flexbox-dan-grid-layout">Flexbox dan Grid Layout</h3>
+
+<p>Gunakan layout modern seperti <code class="language-plaintext highlighter-rouge">flexbox</code> atau <code class="language-plaintext highlighter-rouge">grid</code>:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">flex-wrap</span><span class="p">:</span> <span class="n">wrap</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="gambar-responsif">Gambar Responsif</h3>
+
+<p>Gunakan gambar yang bisa menyesuaikan:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"gambar.jpg"</span> <span class="na">alt=</span><span class="s">"Deskripsi"</span> <span class="na">style=</span><span class="s">"max-width: 100%; height: auto;"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="4-tools-dan-framework">4. Tools dan Framework</h2>
+
+<ul>
+  <li><strong>Bootstrap</strong> – framework CSS dengan grid responsif bawaan</li>
+  <li><strong>Tailwind CSS</strong> – utility-first framework dengan class responsif seperti <code class="language-plaintext highlighter-rouge">md:text-lg</code></li>
+  <li><strong>Google Chrome DevTools</strong> – untuk menguji tampilan responsif</li>
+</ul>
+
+<hr />
+
+<h2 id="5-best-practices">5. Best Practices</h2>
+
+<ul>
+  <li>Gunakan desain mobile-first</li>
+  <li>Hindari fixed-width layout</li>
+  <li>Uji di berbagai perangkat dan resolusi</li>
+  <li>Gunakan unit yang fleksibel</li>
+</ul>
+
+<hr />
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<p>Membuat halaman web yang responsif adalah keharusan di era digital saat ini. Dengan teknik seperti media queries, layout fleksibel, dan gambar responsif juga bisa membangun pengalaman pengguna yang optimal dan profesional di semua perangkat.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[1. Apa itu Web Responsif?]]></summary></entry><entry><title type="html">Fitur Ganti Bahasa (i18n) dalam Web</title><link href="http://localhost:4000/2025/05/15/Fitur-Ganti-Bahasa-(i18n).html" rel="alternate" type="text/html" title="Fitur Ganti Bahasa (i18n) dalam Web" /><published>2025-05-15T00:00:00+07:00</published><updated>2025-05-15T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/15/Fitur-Ganti-Bahasa-(i18n)</id><content type="html" xml:base="http://localhost:4000/2025/05/15/Fitur-Ganti-Bahasa-(i18n).html"><![CDATA[<h2 id="fitur-ganti-bahasa-internationalization---i18n">Fitur Ganti Bahasa (Internationalization - i18n)</h2>
+
+<h2 id="-apa-itu-i18n">📘 Apa itu i18n?</h2>
+
+<p><strong>i18n</strong> adalah singkatan dari <em>internationalization</em> (terdiri dari 18 huruf antara ‘i’ dan ‘n’), yaitu proses mendesain software agar mudah disesuaikan dengan berbagai bahasa dan wilayah tanpa harus mengubah source code.</p>
+
+<p>Tujuannya adalah membuat aplikasi atau situs web dapat diakses oleh pengguna dari berbagai negara dan budaya.</p>
+
+<hr />
+
+<h2 id="i18n-vs-l10n">i18n vs l10n</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Istilah</th>
+      <th>Penjelasan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>i18n</strong> (<em>internationalization</em>)</td>
+      <td>Menyiapkan sistem agar bisa diterjemahkan</td>
+    </tr>
+    <tr>
+      <td><strong>l10n</strong> (<em>localization</em>)</td>
+      <td>Proses menerjemahkan dan menyesuaikan konten berdasarkan budaya lokal</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="fitur-umum-i18n">Fitur Umum i18n</h2>
+
+<ul>
+  <li>Pemilihan bahasa otomatis berdasarkan pengaturan browser</li>
+  <li>Switcher bahasa manual (dropdown/flag)</li>
+  <li>File terpisah untuk tiap bahasa (misal: <code class="language-plaintext highlighter-rouge">en.yml</code>, <code class="language-plaintext highlighter-rouge">id.yml</code>, <code class="language-plaintext highlighter-rouge">fr.yml</code>)</li>
+  <li>Dukungan tanggal/waktu lokal</li>
+  <li>Format angka/mata uang lokal</li>
+</ul>
+
+<hr />
+
+<h2 id="contoh-struktur-file-bahasa">Contoh Struktur File Bahasa</h2>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># en.yml</span>
+<span class="na">home</span><span class="pi">:</span>
+  <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Welcome</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">Our</span><span class="nv"> </span><span class="s">Website"</span>
+  <span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">We</span><span class="nv"> </span><span class="s">provide</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">best</span><span class="nv"> </span><span class="s">services."</span>
+
+<span class="c1"># id.yml</span>
+<span class="na">home</span><span class="pi">:</span>
+  <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Selamat</span><span class="nv"> </span><span class="s">Datang</span><span class="nv"> </span><span class="s">di</span><span class="nv"> </span><span class="s">Situs</span><span class="nv"> </span><span class="s">Kami"</span>
+  <span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Kami</span><span class="nv"> </span><span class="s">menyediakan</span><span class="nv"> </span><span class="s">layanan</span><span class="nv"> </span><span class="s">terbaik."</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="cara-kerja-konsep-umum">Cara Kerja (Konsep Umum)</h2>
+
+<ol>
+  <li>Sistem membaca bahasa dari browser atau pengaturan pengguna</li>
+  <li>Sistem memilih file bahasa yang sesuai (misal <code class="language-plaintext highlighter-rouge">id.yml</code>)</li>
+  <li>Halaman ditampilkan dengan teks yang diterjemahkan</li>
+</ol>
+
+<hr />
+
+<h2 id="i18n-dalam-framework">i18n dalam Framework</h2>
+
+<ul>
+  <li><strong>Jekyll</strong>: Gunakan plugin seperti <code class="language-plaintext highlighter-rouge">jekyll-multiple-languages-plugin</code></li>
+  <li><strong>React</strong>: Gunakan library seperti <code class="language-plaintext highlighter-rouge">react-i18next</code></li>
+  <li><strong>Vue</strong>: Gunakan <code class="language-plaintext highlighter-rouge">vue-i18n</code></li>
+  <li><strong>Next.js</strong>: Dukungan i18n bawaan di <code class="language-plaintext highlighter-rouge">next.config.js</code></li>
+</ul>
+
+<hr />
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<p>Fitur i18n membuat website lebih inklusif dan profesional.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Fitur Ganti Bahasa (Internationalization - i18n)]]></summary></entry><entry><title type="html">Materi SASS dan SCSS</title><link href="http://localhost:4000/2025/05/07/SASS-dan-SCSS.html" rel="alternate" type="text/html" title="Materi SASS dan SCSS" /><published>2025-05-07T00:00:00+07:00</published><updated>2025-05-07T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/07/SASS-dan-SCSS</id><content type="html" xml:base="http://localhost:4000/2025/05/07/SASS-dan-SCSS.html"><![CDATA[<h1 id="materi-sass-dan-scss">Materi: SASS dan SCSS</h1>
 
 <h2 id="1-pendahuluan">1. Pendahuluan</h2>
 
@@ -163,43 +324,7 @@
 
 <hr />
 
-<h2 id="6-studi-kasus-singkat">6. Studi Kasus Singkat</h2>
-
-<h3 id="tanpa-scss">Tanpa SCSS:</h3>
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.button</span> <span class="p">{</span>
-  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
-  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#0069d9</span><span class="p">;</span>
-  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nc">.button-secondary</span> <span class="p">{</span>
-  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
-  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#6c757d</span><span class="p">;</span>
-  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h3 id="dengan-scss">Dengan SCSS:</h3>
-<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">button-style</span><span class="p">(</span><span class="nv">$color</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
-  <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$color</span><span class="p">;</span>
-  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nc">.button</span> <span class="p">{</span>
-  <span class="k">@include</span> <span class="nd">button-style</span><span class="p">(</span><span class="mh">#0069d9</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="nc">.button-secondary</span> <span class="p">{</span>
-  <span class="k">@include</span> <span class="nd">button-style</span><span class="p">(</span><span class="mh">#6c757d</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>Dengan mixin, kode menjadi lebih pendek dan lebih mudah dikelola.</p>
-
-<hr />
-
-<h2 id="7-kesimpulan">7. Kesimpulan</h2>
+<h2 id="6-kesimpulan">6. Kesimpulan</h2>
 
 <p>SASS/SCSS memberikan banyak kemudahan dalam pengembangan CSS, terutama untuk proyek besar dengan banyak elemen gaya.<br />
 Keuntungan menggunakan SASS/SCSS antara lain:</p>

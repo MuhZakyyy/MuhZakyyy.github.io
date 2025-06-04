@@ -236,43 +236,7 @@
 
 <hr />
 
-<h2 id="6-studi-kasus-singkat">6. Studi Kasus Singkat</h2>
-
-<h3 id="tanpa-scss">Tanpa SCSS:</h3>
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.button</span> <span class="p">{</span>
-  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
-  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#0069d9</span><span class="p">;</span>
-  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nc">.button-secondary</span> <span class="p">{</span>
-  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
-  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#6c757d</span><span class="p">;</span>
-  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h3 id="dengan-scss">Dengan SCSS:</h3>
-<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">button-style</span><span class="p">(</span><span class="nv">$color</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
-  <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$color</span><span class="p">;</span>
-  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nc">.button</span> <span class="p">{</span>
-  <span class="k">@include</span> <span class="nd">button-style</span><span class="p">(</span><span class="mh">#0069d9</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="nc">.button-secondary</span> <span class="p">{</span>
-  <span class="k">@include</span> <span class="nd">button-style</span><span class="p">(</span><span class="mh">#6c757d</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>Dengan mixin, kode menjadi lebih pendek dan lebih mudah dikelola.</p>
-
-<hr />
-
-<h2 id="7-kesimpulan">7. Kesimpulan</h2>
+<h2 id="6-kesimpulan">6. Kesimpulan</h2>
 
 <p>SASS/SCSS memberikan banyak kemudahan dalam pengembangan CSS, terutama untuk proyek besar dengan banyak elemen gaya.<br />
 Keuntungan menggunakan SASS/SCSS antara lain:</p>

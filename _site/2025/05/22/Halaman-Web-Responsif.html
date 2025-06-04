@@ -1,0 +1,161 @@
+
+<head>
+  <meta charset="UTF-8">
+  <title>Halaman Web Responsif</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <!-- JavaScript -->
+  <script src="/assets/js/scripts.js"></script>
+
+  <!-- Plugins -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Halaman Web Responsif</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Halaman Web Responsif" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="1. Apa itu Web Responsif?" />
+<meta property="og:description" content="1. Apa itu Web Responsif?" />
+<link rel="canonical" href="http://localhost:4000/2025/05/22/Halaman-Web-Responsif.html" />
+<meta property="og:url" content="http://localhost:4000/2025/05/22/Halaman-Web-Responsif.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-05-22T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Halaman Web Responsif" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-22T00:00:00+07:00","datePublished":"2025-05-22T00:00:00+07:00","description":"1. Apa itu Web Responsif?","headline":"Halaman Web Responsif","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/05/22/Halaman-Web-Responsif.html"},"url":"http://localhost:4000/2025/05/22/Halaman-Web-Responsif.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/assets/image/gambar1.jpg" alt="Profile Picture" class="profile-Picture">
+      <h1>Muhammad Zaky</h1>
+      <p></p>
+    </header>
+
+    <nav>
+      <ul>
+  
+    <li>
+      <a href="/"
+         >
+        Home
+      </a>
+    </li>
+  
+    <li>
+      <a href="/friends.html"
+         >
+        friends
+      </a>
+    </li>
+  
+    <li>
+      <a href="/blog.html"
+         >
+        blog
+      </a>
+    </li>
+  
+</ul>
+
+    </nav>
+
+    <main>
+      <h1>Halaman Web Responsif </h1>
+<p>22 May 2025  </p>
+
+<h2 id="1-apa-itu-web-responsif">1. Apa itu Web Responsif?</h2>
+
+<p><strong>Halaman web responsif</strong> adalah halaman yang mampu menyesuaikan tampilan dan tata letaknya sesuai dengan ukuran layar dan perangkat pengguna seperti smartphone, tablet, atau desktop.</p>
+
+<p>Tujuannya adalah agar pengalaman pengguna tetap optimal di berbagai perangkat.</p>
+
+<hr />
+
+<h2 id="2-mengapa-responsif-penting">2. Mengapa Responsif Penting?</h2>
+
+<ul>
+  <li>Pengguna kini mengakses web dari berbagai ukuran layar</li>
+  <li>Google mengutamakan situs yang responsif dalam hasil pencarian (SEO)</li>
+  <li>Desain yang konsisten dan ramah pengguna</li>
+</ul>
+
+<hr />
+
+<h2 id="3-teknik-responsif">3. Teknik Responsif</h2>
+
+<h3 id="media-queries-css">Media Queries (CSS)</h3>
+
+<p>Media queries memungkinkan kita untuk menerapkan gaya berbeda berdasarkan ukuran layar:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Untuk layar kecil (mobile) */</span>
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">600px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">body</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="persentase-dan-satuan-fleksibel">Persentase dan Satuan Fleksibel</h3>
+
+<p>Gunakan <code class="language-plaintext highlighter-rouge">width: 100%</code>, <code class="language-plaintext highlighter-rouge">em</code>, <code class="language-plaintext highlighter-rouge">rem</code>, dan unit relatif lainnya agar elemen dapat menyesuaikan ukuran.</p>
+
+<h3 id="flexbox-dan-grid-layout">Flexbox dan Grid Layout</h3>
+
+<p>Gunakan layout modern seperti <code class="language-plaintext highlighter-rouge">flexbox</code> atau <code class="language-plaintext highlighter-rouge">grid</code>:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">flex-wrap</span><span class="p">:</span> <span class="n">wrap</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="gambar-responsif">Gambar Responsif</h3>
+
+<p>Gunakan gambar yang bisa menyesuaikan:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"gambar.jpg"</span> <span class="na">alt=</span><span class="s">"Deskripsi"</span> <span class="na">style=</span><span class="s">"max-width: 100%; height: auto;"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="4-tools-dan-framework">4. Tools dan Framework</h2>
+
+<ul>
+  <li><strong>Bootstrap</strong> – framework CSS dengan grid responsif bawaan</li>
+  <li><strong>Tailwind CSS</strong> – utility-first framework dengan class responsif seperti <code class="language-plaintext highlighter-rouge">md:text-lg</code></li>
+  <li><strong>Google Chrome DevTools</strong> – untuk menguji tampilan responsif</li>
+</ul>
+
+<hr />
+
+<h2 id="5-best-practices">5. Best Practices</h2>
+
+<ul>
+  <li>Gunakan desain mobile-first</li>
+  <li>Hindari fixed-width layout</li>
+  <li>Uji di berbagai perangkat dan resolusi</li>
+  <li>Gunakan unit yang fleksibel</li>
+</ul>
+
+<hr />
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<p>Membuat halaman web yang responsif adalah keharusan di era digital saat ini. Dengan teknik seperti media queries, layout fleksibel, dan gambar responsif juga bisa membangun pengalaman pengguna yang optimal dan profesional di semua perangkat.</p>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 . All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

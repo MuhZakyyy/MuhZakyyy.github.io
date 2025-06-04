@@ -1,0 +1,167 @@
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fitur Ganti Bahasa (i18n) dalam Web</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <!-- JavaScript -->
+  <script src="/assets/js/scripts.js"></script>
+
+  <!-- Plugins -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Fitur Ganti Bahasa (i18n) dalam Web</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Fitur Ganti Bahasa (i18n) dalam Web" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Fitur Ganti Bahasa (Internationalization - i18n)" />
+<meta property="og:description" content="Fitur Ganti Bahasa (Internationalization - i18n)" />
+<link rel="canonical" href="http://localhost:4000/2025/05/15/Fitur-Ganti-Bahasa-(i18n).html" />
+<meta property="og:url" content="http://localhost:4000/2025/05/15/Fitur-Ganti-Bahasa-(i18n).html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-05-15T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Fitur Ganti Bahasa (i18n) dalam Web" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-15T00:00:00+07:00","datePublished":"2025-05-15T00:00:00+07:00","description":"Fitur Ganti Bahasa (Internationalization - i18n)","headline":"Fitur Ganti Bahasa (i18n) dalam Web","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/05/15/Fitur-Ganti-Bahasa-(i18n).html"},"url":"http://localhost:4000/2025/05/15/Fitur-Ganti-Bahasa-(i18n).html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/assets/image/gambar1.jpg" alt="Profile Picture" class="profile-Picture">
+      <h1>Muhammad Zaky</h1>
+      <p></p>
+    </header>
+
+    <nav>
+      <ul>
+  
+    <li>
+      <a href="/"
+         >
+        Home
+      </a>
+    </li>
+  
+    <li>
+      <a href="/friends.html"
+         >
+        friends
+      </a>
+    </li>
+  
+    <li>
+      <a href="/blog.html"
+         >
+        blog
+      </a>
+    </li>
+  
+</ul>
+
+    </nav>
+
+    <main>
+      <h1>Fitur Ganti Bahasa (i18n) dalam Web </h1>
+<p>15 May 2025  </p>
+
+<h2 id="fitur-ganti-bahasa-internationalization---i18n">Fitur Ganti Bahasa (Internationalization - i18n)</h2>
+
+<h2 id="-apa-itu-i18n">📘 Apa itu i18n?</h2>
+
+<p><strong>i18n</strong> adalah singkatan dari <em>internationalization</em> (terdiri dari 18 huruf antara ‘i’ dan ‘n’), yaitu proses mendesain software agar mudah disesuaikan dengan berbagai bahasa dan wilayah tanpa harus mengubah source code.</p>
+
+<p>Tujuannya adalah membuat aplikasi atau situs web dapat diakses oleh pengguna dari berbagai negara dan budaya.</p>
+
+<hr />
+
+<h2 id="i18n-vs-l10n">i18n vs l10n</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Istilah</th>
+      <th>Penjelasan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>i18n</strong> (<em>internationalization</em>)</td>
+      <td>Menyiapkan sistem agar bisa diterjemahkan</td>
+    </tr>
+    <tr>
+      <td><strong>l10n</strong> (<em>localization</em>)</td>
+      <td>Proses menerjemahkan dan menyesuaikan konten berdasarkan budaya lokal</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="fitur-umum-i18n">Fitur Umum i18n</h2>
+
+<ul>
+  <li>Pemilihan bahasa otomatis berdasarkan pengaturan browser</li>
+  <li>Switcher bahasa manual (dropdown/flag)</li>
+  <li>File terpisah untuk tiap bahasa (misal: <code class="language-plaintext highlighter-rouge">en.yml</code>, <code class="language-plaintext highlighter-rouge">id.yml</code>, <code class="language-plaintext highlighter-rouge">fr.yml</code>)</li>
+  <li>Dukungan tanggal/waktu lokal</li>
+  <li>Format angka/mata uang lokal</li>
+</ul>
+
+<hr />
+
+<h2 id="contoh-struktur-file-bahasa">Contoh Struktur File Bahasa</h2>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># en.yml</span>
+<span class="na">home</span><span class="pi">:</span>
+  <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Welcome</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">Our</span><span class="nv"> </span><span class="s">Website"</span>
+  <span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">We</span><span class="nv"> </span><span class="s">provide</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">best</span><span class="nv"> </span><span class="s">services."</span>
+
+<span class="c1"># id.yml</span>
+<span class="na">home</span><span class="pi">:</span>
+  <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Selamat</span><span class="nv"> </span><span class="s">Datang</span><span class="nv"> </span><span class="s">di</span><span class="nv"> </span><span class="s">Situs</span><span class="nv"> </span><span class="s">Kami"</span>
+  <span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Kami</span><span class="nv"> </span><span class="s">menyediakan</span><span class="nv"> </span><span class="s">layanan</span><span class="nv"> </span><span class="s">terbaik."</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="cara-kerja-konsep-umum">Cara Kerja (Konsep Umum)</h2>
+
+<ol>
+  <li>Sistem membaca bahasa dari browser atau pengaturan pengguna</li>
+  <li>Sistem memilih file bahasa yang sesuai (misal <code class="language-plaintext highlighter-rouge">id.yml</code>)</li>
+  <li>Halaman ditampilkan dengan teks yang diterjemahkan</li>
+</ol>
+
+<hr />
+
+<h2 id="i18n-dalam-framework">i18n dalam Framework</h2>
+
+<ul>
+  <li><strong>Jekyll</strong>: Gunakan plugin seperti <code class="language-plaintext highlighter-rouge">jekyll-multiple-languages-plugin</code></li>
+  <li><strong>React</strong>: Gunakan library seperti <code class="language-plaintext highlighter-rouge">react-i18next</code></li>
+  <li><strong>Vue</strong>: Gunakan <code class="language-plaintext highlighter-rouge">vue-i18n</code></li>
+  <li><strong>Next.js</strong>: Dukungan i18n bawaan di <code class="language-plaintext highlighter-rouge">next.config.js</code></li>
+</ul>
+
+<hr />
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<p>Fitur i18n membuat website lebih inklusif dan profesional.</p>
+
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 . All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
