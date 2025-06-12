@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-04T10:52:14+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Halaman Web Responsif</title><link href="http://localhost:4000/2025/05/22/Halaman-Web-Responsif.html" rel="alternate" type="text/html" title="Halaman Web Responsif" /><published>2025-05-22T00:00:00+07:00</published><updated>2025-05-22T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/22/Halaman-Web-Responsif</id><content type="html" xml:base="http://localhost:4000/2025/05/22/Halaman-Web-Responsif.html"><![CDATA[<h2 id="1-apa-itu-web-responsif">1. Apa itu Web Responsif?</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-12T10:59:54+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Halaman Web Responsif</title><link href="http://localhost:4000/2025/05/22/Halaman-Web-Responsif.html" rel="alternate" type="text/html" title="Halaman Web Responsif" /><published>2025-05-22T00:00:00+07:00</published><updated>2025-05-22T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/22/Halaman-Web-Responsif</id><content type="html" xml:base="http://localhost:4000/2025/05/22/Halaman-Web-Responsif.html"><![CDATA[<h2 id="1-apa-itu-web-responsif">1. Apa itu Web Responsif?</h2>
 
 <p><strong>Halaman web responsif</strong> adalah halaman yang mampu menyesuaikan tampilan dan tata letaknya sesuai dengan ukuran layar dan perangkat pengguna seperti smartphone, tablet, atau desktop.</p>
 
@@ -76,88 +76,7 @@
 
 <h2 id="kesimpulan">Kesimpulan</h2>
 
-<p>Membuat halaman web yang responsif adalah keharusan di era digital saat ini. Dengan teknik seperti media queries, layout fleksibel, dan gambar responsif juga bisa membangun pengalaman pengguna yang optimal dan profesional di semua perangkat.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[1. Apa itu Web Responsif?]]></summary></entry><entry><title type="html">Fitur Ganti Bahasa (i18n) dalam Web</title><link href="http://localhost:4000/2025/05/15/Fitur-Ganti-Bahasa-(i18n).html" rel="alternate" type="text/html" title="Fitur Ganti Bahasa (i18n) dalam Web" /><published>2025-05-15T00:00:00+07:00</published><updated>2025-05-15T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/15/Fitur-Ganti-Bahasa-(i18n)</id><content type="html" xml:base="http://localhost:4000/2025/05/15/Fitur-Ganti-Bahasa-(i18n).html"><![CDATA[<h2 id="-apa-itu-i18n">📘 Apa itu i18n?</h2>
-
-<p><strong>i18n</strong> adalah singkatan dari <em>internationalization</em> (terdiri dari 18 huruf antara ‘i’ dan ‘n’), yaitu proses mendesain software agar mudah disesuaikan dengan berbagai bahasa dan wilayah tanpa harus mengubah source code.</p>
-
-<p>Tujuannya adalah membuat aplikasi atau situs web dapat diakses oleh pengguna dari berbagai negara dan budaya.</p>
-
-<hr />
-
-<h2 id="i18n-vs-l10n">i18n vs l10n</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Istilah</th>
-      <th>Penjelasan</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>i18n</strong> (<em>internationalization</em>)</td>
-      <td>Menyiapkan sistem agar bisa diterjemahkan</td>
-    </tr>
-    <tr>
-      <td><strong>l10n</strong> (<em>localization</em>)</td>
-      <td>Proses menerjemahkan dan menyesuaikan konten berdasarkan budaya lokal</td>
-    </tr>
-  </tbody>
-</table>
-
-<hr />
-
-<h2 id="fitur-umum-i18n">Fitur Umum i18n</h2>
-
-<ul>
-  <li>Pemilihan bahasa otomatis berdasarkan pengaturan browser</li>
-  <li>Switcher bahasa manual (dropdown/flag)</li>
-  <li>File terpisah untuk tiap bahasa (misal: <code class="language-plaintext highlighter-rouge">en.yml</code>, <code class="language-plaintext highlighter-rouge">id.yml</code>, <code class="language-plaintext highlighter-rouge">fr.yml</code>)</li>
-  <li>Dukungan tanggal/waktu lokal</li>
-  <li>Format angka/mata uang lokal</li>
-</ul>
-
-<hr />
-
-<h2 id="contoh-struktur-file-bahasa">Contoh Struktur File Bahasa</h2>
-
-<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># en.yml</span>
-<span class="na">home</span><span class="pi">:</span>
-  <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Welcome</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">Our</span><span class="nv"> </span><span class="s">Website"</span>
-  <span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">We</span><span class="nv"> </span><span class="s">provide</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">best</span><span class="nv"> </span><span class="s">services."</span>
-
-<span class="c1"># id.yml</span>
-<span class="na">home</span><span class="pi">:</span>
-  <span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Selamat</span><span class="nv"> </span><span class="s">Datang</span><span class="nv"> </span><span class="s">di</span><span class="nv"> </span><span class="s">Situs</span><span class="nv"> </span><span class="s">Kami"</span>
-  <span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Kami</span><span class="nv"> </span><span class="s">menyediakan</span><span class="nv"> </span><span class="s">layanan</span><span class="nv"> </span><span class="s">terbaik."</span>
-</code></pre></div></div>
-
-<hr />
-
-<h2 id="cara-kerja-konsep-umum">Cara Kerja (Konsep Umum)</h2>
-
-<ol>
-  <li>Sistem membaca bahasa dari browser atau pengaturan pengguna</li>
-  <li>Sistem memilih file bahasa yang sesuai (misal <code class="language-plaintext highlighter-rouge">id.yml</code>)</li>
-  <li>Halaman ditampilkan dengan teks yang diterjemahkan</li>
-</ol>
-
-<hr />
-
-<h2 id="i18n-dalam-framework">i18n dalam Framework</h2>
-
-<ul>
-  <li><strong>Jekyll</strong>: Gunakan plugin seperti <code class="language-plaintext highlighter-rouge">jekyll-multiple-languages-plugin</code></li>
-  <li><strong>React</strong>: Gunakan library seperti <code class="language-plaintext highlighter-rouge">react-i18next</code></li>
-  <li><strong>Vue</strong>: Gunakan <code class="language-plaintext highlighter-rouge">vue-i18n</code></li>
-  <li><strong>Next.js</strong>: Dukungan i18n bawaan di <code class="language-plaintext highlighter-rouge">next.config.js</code></li>
-</ul>
-
-<hr />
-
-<h2 id="kesimpulan">Kesimpulan</h2>
-
-<p>Fitur i18n membuat website lebih inklusif dan profesional.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[📘 Apa itu i18n?]]></summary></entry><entry><title type="html">Materi SASS dan SCSS</title><link href="http://localhost:4000/2025/05/07/SASS-dan-SCSS.html" rel="alternate" type="text/html" title="Materi SASS dan SCSS" /><published>2025-05-07T00:00:00+07:00</published><updated>2025-05-07T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/07/SASS-dan-SCSS</id><content type="html" xml:base="http://localhost:4000/2025/05/07/SASS-dan-SCSS.html"><![CDATA[<h1 id="materi-sass-dan-scss">Materi: SASS dan SCSS</h1>
+<p>Membuat halaman web yang responsif adalah keharusan di era digital saat ini. Dengan teknik seperti media queries, layout fleksibel, dan gambar responsif juga bisa membangun pengalaman pengguna yang optimal dan profesional di semua perangkat.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[1. Apa itu Web Responsif?]]></summary></entry><entry><title type="html">Materi SASS dan SCSS</title><link href="http://localhost:4000/2025/05/07/SASS-dan-SCSS.html" rel="alternate" type="text/html" title="Materi SASS dan SCSS" /><published>2025-05-07T00:00:00+07:00</published><updated>2025-05-07T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/07/SASS-dan-SCSS</id><content type="html" xml:base="http://localhost:4000/2025/05/07/SASS-dan-SCSS.html"><![CDATA[<h1 id="materi-sass-dan-scss">Materi: SASS dan SCSS</h1>
 
 <h2 id="1-pendahuluan">1. Pendahuluan</h2>
 
@@ -332,7 +251,314 @@ Keuntungan menggunakan SASS/SCSS antara lain:</p>
   <li>Meminimalisir pengulangan.</li>
   <li>Meningkatkan keterbacaan dan maintainability.</li>
   <li>Kompatibel dengan CSS, terutama SCSS.</li>
-</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi: SASS dan SCSS]]></summary></entry><entry><title type="html">config yml</title><link href="http://localhost:4000/2025/04/24/config-yml.html" rel="alternate" type="text/html" title="config yml" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/config-yml</id><content type="html" xml:base="http://localhost:4000/2025/04/24/config-yml.html"><![CDATA[<h1 id="-panduan-lengkap-configyml">📘 Panduan Lengkap: config.yml</h1>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi: SASS dan SCSS]]></summary></entry><entry><title type="html">Menambahkan Video di HTML</title><link href="http://localhost:4000/2025/05/03/Menambahkan-Video-HTML.html" rel="alternate" type="text/html" title="Menambahkan Video di HTML" /><published>2025-05-03T00:00:00+07:00</published><updated>2025-05-03T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/03/Menambahkan-Video-HTML</id><content type="html" xml:base="http://localhost:4000/2025/05/03/Menambahkan-Video-HTML.html"><![CDATA[<h2 id="menambahkan-video-ke-halaman-web-dengan-html">Menambahkan Video ke Halaman Web dengan HTML</h2>
+
+<h3 id="kenapa-perlu-menambahkan-video">Kenapa Perlu Menambahkan Video?</h3>
+
+<p>Menambahkan elemen video ke dalam situs web bisa membuat konten kamu lebih hidup, menarik perhatian pengunjung, dan menyampaikan informasi secara visual. Cocok untuk tutorial, promosi produk, atau portofolio.</p>
+
+<hr />
+
+<h3 id="tag-dasar-video">Tag Dasar: <code class="language-plaintext highlighter-rouge">&lt;video&gt;</code></h3>
+
+<p>HTML menyediakan tag <code class="language-plaintext highlighter-rouge">&lt;video&gt;</code> untuk menyisipkan media video langsung ke halaman web.</p>
+
+<p>Contoh dasar:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;video</span> <span class="na">width=</span><span class="s">"640"</span> <span class="na">height=</span><span class="s">"360"</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"assets/video/Cineamtic Supra MK4.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;</span>
+  Browser kamu tidak mendukung tag video.
+<span class="nt">&lt;/video&gt;</span>
+</code></pre></div></div>
+
+<p>Penjelasan:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">width</code> dan <code class="language-plaintext highlighter-rouge">height</code>: mengatur ukuran video.</li>
+  <li><code class="language-plaintext highlighter-rouge">controls</code>: menampilkan tombol play, pause, volume, dsb.</li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;source&gt;</code>: lokasi dan format file video.</li>
+  <li>Teks di antara tag <code class="language-plaintext highlighter-rouge">&lt;video&gt;</code> berguna jika browser tidak mendukung video.</li>
+</ul>
+
+<hr />
+
+<h3 id="atribut-tambahan">Atribut Tambahan</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Atribut</th>
+      <th>Fungsi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">autoplay</code></td>
+      <td>Memutar video otomatis saat halaman dibuka</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">muted</code></td>
+      <td>Mematikan suara secara default (biasanya dipakai bersama autoplay)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">loop</code></td>
+      <td>Memutar video berulang tanpa henti</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">poster</code></td>
+      <td>Menampilkan gambar preview sebelum video diputar</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">preload</code></td>
+      <td>Mengontrol bagaimana browser memuat video sebelum diputar</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Contoh:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;video</span> <span class="na">width=</span><span class="s">"100%"</span> <span class="na">controls</span> <span class="na">autoplay</span> <span class="na">muted</span> <span class="na">loop</span> <span class="na">poster=</span><span class="s">"thumbnail.jpg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"teaser.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="tips-praktis">Tips Praktis</h3>
+
+<ul>
+  <li>Gunakan format <code class="language-plaintext highlighter-rouge">.mp4</code> untuk kompatibilitas terbaik.</li>
+  <li>Sertakan lebih dari satu format video jika perlu (misalnya <code class="language-plaintext highlighter-rouge">.webm</code>, <code class="language-plaintext highlighter-rouge">.ogg</code>).</li>
+  <li>Perhatikan ukuran file — video yang besar bisa memperlambat halaman.</li>
+</ul>
+
+<hr />
+
+<h3 id="embed-video-dari-youtube">Embed Video dari YouTube</h3>
+
+<p>jika tidak ingin menyimpan file video sendiri, bisa ambil dari YouTube:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;iframe</span> <span class="na">width=</span><span class="s">"560"</span> <span class="na">height=</span><span class="s">"315"</span> 
+  <span class="na">src=</span><span class="s">"https://www.youtube.com/embed/VIDEO_ID"</span> 
+  <span class="na">frameborder=</span><span class="s">"0"</span> <span class="na">allowfullscreen</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/iframe&gt;</span>
+</code></pre></div></div>
+
+<p>Ganti <code class="language-plaintext highlighter-rouge">VIDEO_ID</code> dengan ID video YouTube yang ingin ditampilkan.</p>
+
+<hr />
+
+<h3 id="kesimpulan">Kesimpulan</h3>
+
+<p>Menambahkan video ke HTML itu mudah dan powerful. Kamu bisa pakai:</p>
+<ul>
+  <li>Tag <code class="language-plaintext highlighter-rouge">&lt;video&gt;</code> untuk video lokal</li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;iframe&gt;</code> untuk YouTube</li>
+  <li>Atur atribut sesuai kebutuhan agar video tampil optimal</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Menambahkan Video ke Halaman Web dengan HTML]]></summary></entry><entry><title type="html">Menambahkan audio di HTML</title><link href="http://localhost:4000/2025/05/03/Menambahkan-audio-HTML.html" rel="alternate" type="text/html" title="Menambahkan audio di HTML" /><published>2025-05-03T00:00:00+07:00</published><updated>2025-05-03T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/03/Menambahkan-audio-HTML</id><content type="html" xml:base="http://localhost:4000/2025/05/03/Menambahkan-audio-HTML.html"><![CDATA[<h1 id="menambahkan-audio-pada-html">Menambahkan Audio pada HTML</h1>
+
+<p>HTML menyediakan tag <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code> untuk menyematkan file audio ke dalam halaman web. Dengan elemen ini, pengguna dapat memutar suara, musik, atau rekaman langsung dari browser.</p>
+
+<h2 id="sintaks-dasar">Sintaks Dasar</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;audio</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"audio-file.mp3"</span> <span class="na">type=</span><span class="s">"audio/mpeg"</span><span class="nt">&gt;</span>
+  Your browser does not support the audio element.
+<span class="nt">&lt;/audio&gt;</span>
+</code></pre></div></div>
+
+<h3 id="penjelasan">Penjelasan:</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code>: Tag utama untuk menyisipkan audio.</li>
+  <li><code class="language-plaintext highlighter-rouge">controls</code>: Menampilkan kontrol pemutar audio (play, pause, volume).</li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;source&gt;</code>: Menentukan file audio yang akan diputar.</li>
+  <li><code class="language-plaintext highlighter-rouge">type</code>: Menentukan format audio (misalnya <code class="language-plaintext highlighter-rouge">audio/mpeg</code>, <code class="language-plaintext highlighter-rouge">audio/ogg</code>, dll).</li>
+  <li>Teks di dalam <code class="language-plaintext highlighter-rouge">&lt;audio&gt;</code> ditampilkan jika browser tidak mendukung tag ini.</li>
+</ul>
+
+<h2 id="contoh-lengkap">Contoh Lengkap</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h2&gt;</span>Contoh Audio<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;p&gt;</span>Berikut adalah audio sederhana:<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;audio</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"lagu.mp3"</span> <span class="na">type=</span><span class="s">"audio/mpeg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"lagu.ogg"</span> <span class="na">type=</span><span class="s">"audio/ogg"</span><span class="nt">&gt;</span>
+  Browser Anda tidak mendukung elemen audio.
+<span class="nt">&lt;/audio&gt;</span>
+</code></pre></div></div>
+
+<h2 id="atribut-tambahan">Atribut Tambahan</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Atribut</th>
+      <th>Deskripsi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">autoplay</code></td>
+      <td>Audio akan langsung diputar saat halaman dimuat.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">loop</code></td>
+      <td>Memutar ulang audio secara terus-menerus.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">muted</code></td>
+      <td>Memulai audio dalam keadaan tanpa suara.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">preload</code></td>
+      <td>Menentukan apakah audio harus dimuat saat halaman dimuat. Nilai: <code class="language-plaintext highlighter-rouge">auto</code>, <code class="language-plaintext highlighter-rouge">metadata</code>, <code class="language-plaintext highlighter-rouge">none</code>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="contoh">Contoh:</h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;audio</span> <span class="na">controls</span> <span class="na">autoplay</span> <span class="na">loop</span> <span class="na">muted</span> <span class="na">preload=</span><span class="s">"auto"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"backsound.mp3"</span> <span class="na">type=</span><span class="s">"audio/mpeg"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/audio&gt;</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>Catatan</strong>: Beberapa browser membatasi pemutaran otomatis audio, terutama jika tidak ada interaksi pengguna.</p>
+</blockquote>
+
+<h2 id="format-audio-yang-didukung">Format Audio yang Didukung</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Format</th>
+      <th>MIME Type</th>
+      <th>Dukungan Browser</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MP3</td>
+      <td><code class="language-plaintext highlighter-rouge">audio/mpeg</code></td>
+      <td>Semua browser modern</td>
+    </tr>
+    <tr>
+      <td>OGG</td>
+      <td><code class="language-plaintext highlighter-rouge">audio/ogg</code></td>
+      <td>Firefox, Chrome, Opera</td>
+    </tr>
+    <tr>
+      <td>WAV</td>
+      <td><code class="language-plaintext highlighter-rouge">audio/wav</code></td>
+      <td>Semua browser modern</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<p>Menambahkan audio ke dalam halaman HTML sangat mudah dengan menggunakan elemen <audio>. Pastikan untuk menyediakan berbagai format audio agar mendukung berbagai browser. Gunakan atribut seperti controls, autoplay, loop, dan preload sesuai kebutuhan untuk meningkatkan pengalaman pengguna. Dengan fitur ini, kamu dapat memperkaya konten web dengan suara atau musik secara efisien dan interaktif.</audio></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Menambahkan Audio pada HTML]]></summary></entry><entry><title type="html">Plugins</title><link href="http://localhost:4000/2025/04/24/Plugins.html" rel="alternate" type="text/html" title="Plugins" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/Plugins</id><content type="html" xml:base="http://localhost:4000/2025/04/24/Plugins.html"><![CDATA[<h1 id="-penjelasan-tentang-plugins-dalam-jekyll">🔌 Penjelasan tentang Plugins dalam Jekyll</h1>
+
+<h2 id="-pengertian-plugin">🔍 Pengertian Plugin</h2>
+
+<p><strong>Plugin</strong> adalah komponen tambahan yang dapat dipasang ke dalam program utama untuk menambahkan fitur atau fungsi tertentu tanpa harus mengubah program aslinya.</p>
+
+<p>Dengan kata lain, plugin itu seperti <strong>“alat bantu tambahan”</strong> — kamu bisa memilih sendiri apa yang dibutuhkan tanpa harus memodifikasi keseluruhan sistem.</p>
+
+<hr />
+
+<h2 id="-1-jekyll-sitemap">🔗 1. <code class="language-plaintext highlighter-rouge">jekyll-sitemap</code></h2>
+
+<p><strong>Fungsi</strong>:<br />
+Secara otomatis menghasilkan file <code class="language-plaintext highlighter-rouge">sitemap.xml</code>, yang sangat berguna bagi mesin pencari untuk memahami struktur situs kamu.</p>
+
+<p><strong>Kelebihan</strong>:</p>
+<ul>
+  <li>Membantu Google dan mesin pencari lainnya dalam proses crawling</li>
+  <li>Tidak perlu membuat sitemap secara manual</li>
+  <li>Langsung tersedia setelah proses build</li>
+</ul>
+
+<p><strong>Hasil</strong>:<br />
+File <code class="language-plaintext highlighter-rouge">sitemap.xml</code> muncul di root, misalnya:<br />
+<code class="language-plaintext highlighter-rouge">https://domainkamu.com/sitemap.xml</code></p>
+
+<hr />
+
+<h2 id="-2-jekyll-feed">📡 2. <code class="language-plaintext highlighter-rouge">jekyll-feed</code></h2>
+
+<p><strong>Fungsi</strong>:<br />
+Membuat file <code class="language-plaintext highlighter-rouge">feed.xml</code> secara otomatis, sehingga pembaca dapat berlangganan konten kamu melalui aplikasi pembaca RSS.</p>
+
+<p><strong>Kelebihan</strong>:</p>
+<ul>
+  <li>Memudahkan distribusi konten ke pengguna tetap</li>
+  <li>Bisa digunakan oleh layanan pihak ketiga seperti Feedly, Mailchimp, dll</li>
+</ul>
+
+<p><strong>Hasil</strong>:<br />
+<code class="language-plaintext highlighter-rouge">https://domainkamu.com/feed.xml</code> akan tersedia otomatis.</p>
+
+<hr />
+
+<h2 id="️-3-jekyll-seo-tag">🏷️ 3. <code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code></h2>
+
+<p><strong>Fungsi</strong>:<br />
+Menambahkan tag SEO secara otomatis ke bagian <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> HTML halaman, termasuk metadata untuk mesin pencari dan media sosial.</p>
+
+<p><strong>Kelebihan</strong>:</p>
+<ul>
+  <li>Tambahkan informasi penting seperti title, description, dan canonical</li>
+  <li>Mendukung Open Graph dan Twitter Card</li>
+  <li>Konfigurasi cukup lewat <code class="language-plaintext highlighter-rouge">_config.yml</code></li>
+</ul>
+
+<p><strong>Penggunaan</strong>:<br />
+Letakkan tag ini di layout utama kamu (misalnya <code class="language-plaintext highlighter-rouge">default.html</code>):</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">seo</span><span class="w"> </span><span class="cp">%}</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="️-cara-menginstal-plugin-jekyll">⚙️ Cara Menginstal Plugin Jekyll</h2>
+
+<p>Untuk menambahkan plugin ke proyek Jekyll kamu, ikuti langkah-langkah berikut:</p>
+
+<h3 id="1-tambahkan-ke-gemfile"><strong>1. Tambahkan ke Gemfile</strong></h3>
+
+<p>Edit file <code class="language-plaintext highlighter-rouge">Gemfile</code> dan masukkan baris berikut di dalam grup plugin:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">group</span> <span class="ss">:jekyll_plugins</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s1">'jekyll-sitemap'</span>
+  <span class="n">gem</span> <span class="s1">'jekyll-feed'</span>
+  <span class="n">gem</span> <span class="s1">'jekyll-seo-tag'</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h3 id="2-instal-plugin"><strong>2. Instal Plugin</strong></h3>
+
+<p>Setelah plugin ditambahkan, jalankan perintah ini di terminal untuk menginstalnya:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">install</span>
+</code></pre></div></div>
+
+<h3 id="3-tambahkan-di-_configyml"><strong>3. Tambahkan di <code class="language-plaintext highlighter-rouge">_config.yml</code></strong></h3>
+
+<p>Pastikan semua plugin dicantumkan di file <code class="language-plaintext highlighter-rouge">_config.yml</code>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">plugins</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">jekyll-sitemap</span>
+  <span class="pi">-</span> <span class="s">jekyll-feed</span>
+  <span class="pi">-</span> <span class="s">jekyll-seo-tag</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="-kesimpulan">📝 Kesimpulan</h2>
+
+<p>Memanfaatkan plugin seperti <code class="language-plaintext highlighter-rouge">jekyll-sitemap</code>, <code class="language-plaintext highlighter-rouge">jekyll-feed</code>, dan <code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code> adalah cara efektif untuk menjadikan blog Jekyll kamu lebih optimal, baik untuk mesin pencari maupun pengunjung. Hanya dengan konfigurasi sederhana, kamu sudah bisa menikmati fitur-fitur canggih yang membuat blog tampak lebih profesional.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[🔌 Penjelasan tentang Plugins dalam Jekyll]]></summary></entry><entry><title type="html">config yml</title><link href="http://localhost:4000/2025/04/24/config-yml.html" rel="alternate" type="text/html" title="config yml" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/config-yml</id><content type="html" xml:base="http://localhost:4000/2025/04/24/config-yml.html"><![CDATA[<h1 id="-panduan-lengkap-configyml">📘 Panduan Lengkap: config.yml</h1>
 
 <h2 id="keterangan-dasar">Keterangan Dasar</h2>
 
@@ -433,107 +659,7 @@ Keuntungan menggunakan SASS/SCSS antara lain:</p>
   <li>Ringan dan mudah dibaca manusia</li>
   <li>Mendukung struktur data kompleks (nested, list, boolean)</li>
   <li>Sangat berguna dalam banyak ekosistem pengembangan seperti Jekyll, GitHub Actions, Docker, dan CI/CD pipeline</li>
-</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[📘 Panduan Lengkap: config.yml]]></summary></entry><entry><title type="html">Plugins</title><link href="http://localhost:4000/2025/04/24/Plugins.html" rel="alternate" type="text/html" title="Plugins" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/Plugins</id><content type="html" xml:base="http://localhost:4000/2025/04/24/Plugins.html"><![CDATA[<h1 id="-penjelasan-tentang-plugins-dalam-jekyll">🔌 Penjelasan tentang Plugins dalam Jekyll</h1>
-
-<h2 id="-pengertian-plugin">🔍 Pengertian Plugin</h2>
-
-<p><strong>Plugin</strong> adalah komponen tambahan yang dapat dipasang ke dalam program utama untuk menambahkan fitur atau fungsi tertentu tanpa harus mengubah program aslinya.</p>
-
-<p>Dengan kata lain, plugin itu seperti <strong>“alat bantu tambahan”</strong> — kamu bisa memilih sendiri apa yang dibutuhkan tanpa harus memodifikasi keseluruhan sistem.</p>
-
-<hr />
-
-<h2 id="-1-jekyll-sitemap">🔗 1. <code class="language-plaintext highlighter-rouge">jekyll-sitemap</code></h2>
-
-<p><strong>Fungsi</strong>:<br />
-Secara otomatis menghasilkan file <code class="language-plaintext highlighter-rouge">sitemap.xml</code>, yang sangat berguna bagi mesin pencari untuk memahami struktur situs kamu.</p>
-
-<p><strong>Kelebihan</strong>:</p>
-<ul>
-  <li>Membantu Google dan mesin pencari lainnya dalam proses crawling</li>
-  <li>Tidak perlu membuat sitemap secara manual</li>
-  <li>Langsung tersedia setelah proses build</li>
-</ul>
-
-<p><strong>Hasil</strong>:<br />
-File <code class="language-plaintext highlighter-rouge">sitemap.xml</code> muncul di root, misalnya:<br />
-<code class="language-plaintext highlighter-rouge">https://domainkamu.com/sitemap.xml</code></p>
-
-<hr />
-
-<h2 id="-2-jekyll-feed">📡 2. <code class="language-plaintext highlighter-rouge">jekyll-feed</code></h2>
-
-<p><strong>Fungsi</strong>:<br />
-Membuat file <code class="language-plaintext highlighter-rouge">feed.xml</code> secara otomatis, sehingga pembaca dapat berlangganan konten kamu melalui aplikasi pembaca RSS.</p>
-
-<p><strong>Kelebihan</strong>:</p>
-<ul>
-  <li>Memudahkan distribusi konten ke pengguna tetap</li>
-  <li>Bisa digunakan oleh layanan pihak ketiga seperti Feedly, Mailchimp, dll</li>
-</ul>
-
-<p><strong>Hasil</strong>:<br />
-<code class="language-plaintext highlighter-rouge">https://domainkamu.com/feed.xml</code> akan tersedia otomatis.</p>
-
-<hr />
-
-<h2 id="️-3-jekyll-seo-tag">🏷️ 3. <code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code></h2>
-
-<p><strong>Fungsi</strong>:<br />
-Menambahkan tag SEO secara otomatis ke bagian <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> HTML halaman, termasuk metadata untuk mesin pencari dan media sosial.</p>
-
-<p><strong>Kelebihan</strong>:</p>
-<ul>
-  <li>Tambahkan informasi penting seperti title, description, dan canonical</li>
-  <li>Mendukung Open Graph dan Twitter Card</li>
-  <li>Konfigurasi cukup lewat <code class="language-plaintext highlighter-rouge">_config.yml</code></li>
-</ul>
-
-<p><strong>Penggunaan</strong>:<br />
-Letakkan tag ini di layout utama kamu (misalnya <code class="language-plaintext highlighter-rouge">default.html</code>):</p>
-
-<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">seo</span><span class="w"> </span><span class="cp">%}</span>
-</code></pre></div></div>
-
-<hr />
-
-<h2 id="️-cara-menginstal-plugin-jekyll">⚙️ Cara Menginstal Plugin Jekyll</h2>
-
-<p>Untuk menambahkan plugin ke proyek Jekyll kamu, ikuti langkah-langkah berikut:</p>
-
-<h3 id="1-tambahkan-ke-gemfile"><strong>1. Tambahkan ke Gemfile</strong></h3>
-
-<p>Edit file <code class="language-plaintext highlighter-rouge">Gemfile</code> dan masukkan baris berikut di dalam grup plugin:</p>
-
-<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">group</span> <span class="ss">:jekyll_plugins</span> <span class="k">do</span>
-  <span class="n">gem</span> <span class="s1">'jekyll-sitemap'</span>
-  <span class="n">gem</span> <span class="s1">'jekyll-feed'</span>
-  <span class="n">gem</span> <span class="s1">'jekyll-seo-tag'</span>
-<span class="k">end</span>
-</code></pre></div></div>
-
-<h3 id="2-instal-plugin"><strong>2. Instal Plugin</strong></h3>
-
-<p>Setelah plugin ditambahkan, jalankan perintah ini di terminal untuk menginstalnya:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">install</span>
-</code></pre></div></div>
-
-<h3 id="3-tambahkan-di-_configyml"><strong>3. Tambahkan di <code class="language-plaintext highlighter-rouge">_config.yml</code></strong></h3>
-
-<p>Pastikan semua plugin dicantumkan di file <code class="language-plaintext highlighter-rouge">_config.yml</code>:</p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">plugins</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="s">jekyll-sitemap</span>
-  <span class="pi">-</span> <span class="s">jekyll-feed</span>
-  <span class="pi">-</span> <span class="s">jekyll-seo-tag</span>
-</code></pre></div></div>
-
-<hr />
-
-<h2 id="-kesimpulan">📝 Kesimpulan</h2>
-
-<p>Memanfaatkan plugin seperti <code class="language-plaintext highlighter-rouge">jekyll-sitemap</code>, <code class="language-plaintext highlighter-rouge">jekyll-feed</code>, dan <code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code> adalah cara efektif untuk menjadikan blog Jekyll kamu lebih optimal, baik untuk mesin pencari maupun pengunjung. Hanya dengan konfigurasi sederhana, kamu sudah bisa menikmati fitur-fitur canggih yang membuat blog tampak lebih profesional.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[🔌 Penjelasan tentang Plugins dalam Jekyll]]></summary></entry><entry><title type="html">HTML link dan List</title><link href="http://localhost:4000/2025/03/20/html-link-dan-lists.html" rel="alternate" type="text/html" title="HTML link dan List" /><published>2025-03-20T00:00:00+07:00</published><updated>2025-03-20T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/20/html-link-dan-lists</id><content type="html" xml:base="http://localhost:4000/2025/03/20/html-link-dan-lists.html"><![CDATA[<p>Penjelasan tentang link dan lists pada HTML.</p>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[📘 Panduan Lengkap: config.yml]]></summary></entry><entry><title type="html">HTML link dan List</title><link href="http://localhost:4000/2025/03/20/html-link-dan-lists.html" rel="alternate" type="text/html" title="HTML link dan List" /><published>2025-03-20T00:00:00+07:00</published><updated>2025-03-20T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/20/html-link-dan-lists</id><content type="html" xml:base="http://localhost:4000/2025/03/20/html-link-dan-lists.html"><![CDATA[<p>Penjelasan tentang link dan lists pada HTML.</p>
 
 <p><img src="/assets/image/images.jpg" alt="Html link dan list" /></p>
 

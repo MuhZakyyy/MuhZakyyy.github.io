@@ -1,6 +1,5 @@
 $primary-color: #3b7b3a;
 $secondary-color: #fbbc05;
-$tree-color: #16c52d;
 $font-stack: Helvetica, sans-serif;
 
 .last_name {
@@ -51,8 +50,10 @@ h2 {
 nav {
   margin: 0px 0;
 
+
   ul {
     list-style-type: none;
+    text-align: center;
     margin: 0;
     padding: 0;
     overflow: hidden;
