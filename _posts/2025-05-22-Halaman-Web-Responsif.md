@@ -3,7 +3,7 @@ layout: post
 title: Halaman Web Responsif
 ---
 
-## 1. Apa itu Web Responsif?
+## 1.Apa itu Web Responsif?
 
 **Halaman web responsif** adalah halaman yang mampu menyesuaikan tampilan dan tata letaknya sesuai dengan ukuran layar dan perangkat pengguna seperti smartphone, tablet, atau desktop.
 
@@ -76,6 +76,6 @@ Gunakan gambar yang bisa menyesuaikan:
 
 ---
 
-##  Kesimpulan
+## Kesimpulan
 
 Membuat halaman web yang responsif adalah keharusan di era digital saat ini. Dengan teknik seperti media queries, layout fleksibel, dan gambar responsif juga bisa membangun pengalaman pengguna yang optimal dan profesional di semua perangkat.
