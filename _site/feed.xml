@@ -1,4 +1,95 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-02T21:57:12+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Halaman Web Responsif</title><link href="http://localhost:4000/2025/05/22/Halaman-Web-Responsif.html" rel="alternate" type="text/html" title="Halaman Web Responsif" /><published>2025-05-22T00:00:00+07:00</published><updated>2025-05-22T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/22/Halaman-Web-Responsif</id><content type="html" xml:base="http://localhost:4000/2025/05/22/Halaman-Web-Responsif.html"><![CDATA[<h2 id="1apa-itu-web-responsif">1.Apa itu Web Responsif?</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-12T16:10:44+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Koneksi Database Mysql Dengan PHP</title><link href="http://localhost:4000/2025/07/12/Koneksi-Database-mysql-dengan-php.html" rel="alternate" type="text/html" title="Koneksi Database Mysql Dengan PHP" /><published>2025-07-12T00:00:00+07:00</published><updated>2025-07-12T00:00:00+07:00</updated><id>http://localhost:4000/2025/07/12/Koneksi-Database-mysql-dengan-php</id><content type="html" xml:base="http://localhost:4000/2025/07/12/Koneksi-Database-mysql-dengan-php.html"><![CDATA[<h1 id="koneksi-database-mysql-dengan-php">Koneksi Database MySQL dengan PHP</h1>
+
+<p>Menghubungkan PHP dengan MySQL adalah salah satu dasar dalam pengembangan web dinamis. PHP menyediakan fungsi bawaan untuk melakukan koneksi ke database MySQL, salah satunya menggunakan <code class="language-plaintext highlighter-rouge">mysqli</code>.</p>
+
+<hr />
+
+<h2 id="-persiapan-awal">📌 Persiapan Awal</h2>
+
+<p>Sebelum melakukan koneksi:</p>
+<ul>
+  <li>Pastikan server MySQL aktif (misalnya dengan XAMPP atau MAMP).</li>
+  <li>Buat database dan tabel jika belum ada.</li>
+  <li>Simpan skrip PHP di folder server lokal (misal: <code class="language-plaintext highlighter-rouge">htdocs</code> untuk XAMPP).</li>
+</ul>
+
+<hr />
+
+<h2 id="-struktur-koneksi-dasar-dengan-mysqli">🔧 Struktur Koneksi Dasar (dengan <code class="language-plaintext highlighter-rouge">mysqli</code>)</h2>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="nv">$host</span> <span class="o">=</span> <span class="s2">"localhost"</span><span class="p">;</span>     <span class="c1">// Server database</span>
+<span class="nv">$user</span> <span class="o">=</span> <span class="s2">"root"</span><span class="p">;</span>          <span class="c1">// Username database</span>
+<span class="nv">$password</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>          <span class="c1">// Password database (kosong jika default XAMPP)</span>
+<span class="nv">$database</span> <span class="o">=</span> <span class="s2">"nama_db"</span><span class="p">;</span>   <span class="c1">// Nama database</span>
+
+<span class="c1">// Membuat koneksi</span>
+<span class="nv">$koneksi</span> <span class="o">=</span> <span class="nb">mysqli_connect</span><span class="p">(</span><span class="nv">$host</span><span class="p">,</span> <span class="nv">$user</span><span class="p">,</span> <span class="nv">$password</span><span class="p">,</span> <span class="nv">$database</span><span class="p">);</span>
+
+<span class="c1">// Cek koneksi</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$koneksi</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">die</span><span class="p">(</span><span class="s2">"Koneksi gagal: "</span> <span class="mf">.</span> <span class="nf">mysqli_connect_error</span><span class="p">());</span>
+<span class="p">}</span>
+<span class="k">echo</span> <span class="s2">"Koneksi berhasil!"</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="-penjelasan-kode">✅ Penjelasan Kode</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Bagian Kode</th>
+      <th>Penjelasan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">mysqli_connect()</code></td>
+      <td>Fungsi untuk membuat koneksi ke database.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">die()</code></td>
+      <td>Menghentikan eksekusi jika terjadi kesalahan dan menampilkan pesan.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">mysqli_connect_error()</code></td>
+      <td>Mengembalikan pesan error terakhir saat koneksi gagal.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="-contoh-struktur-proyek">📂 Contoh Struktur Proyek</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/htdocs/
+└── koneksi-db/
+    ├── index.php
+    └── koneksi.php
+</code></pre></div></div>
+
+<p><strong>Isi <code class="language-plaintext highlighter-rouge">koneksi.php</code>:</strong></p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="nv">$koneksi</span> <span class="o">=</span> <span class="nb">mysqli_connect</span><span class="p">(</span><span class="s2">"localhost"</span><span class="p">,</span> <span class="s2">"root"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">"sekolah"</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$koneksi</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">die</span><span class="p">(</span><span class="s2">"Koneksi gagal: "</span> <span class="mf">.</span> <span class="nf">mysqli_connect_error</span><span class="p">());</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<p><strong>Isi <code class="language-plaintext highlighter-rouge">index.php</code>:</strong></p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="k">include</span> <span class="s1">'koneksi.php'</span><span class="p">;</span>
+
+<span class="k">echo</span> <span class="s2">"Selamat datang! Koneksi berhasil."</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[Koneksi Database MySQL dengan PHP]]></summary></entry><entry><title type="html">Halaman Web Responsif</title><link href="http://localhost:4000/2025/05/22/Halaman-Web-Responsif.html" rel="alternate" type="text/html" title="Halaman Web Responsif" /><published>2025-05-22T00:00:00+07:00</published><updated>2025-05-22T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/22/Halaman-Web-Responsif</id><content type="html" xml:base="http://localhost:4000/2025/05/22/Halaman-Web-Responsif.html"><![CDATA[<h2 id="1apa-itu-web-responsif">1.Apa itu Web Responsif?</h2>
 
 <p><strong>Halaman web responsif</strong> adalah halaman yang mampu menyesuaikan tampilan dan tata letaknya sesuai dengan ukuran layar dan perangkat pengguna seperti smartphone, tablet, atau desktop.</p>
 
@@ -458,107 +549,7 @@ Keuntungan menggunakan SASS/SCSS antara lain:</p>
 
 <h2 id="kesimpulan">Kesimpulan</h2>
 
-<p>Menambahkan audio ke dalam halaman HTML sangat mudah dengan menggunakan elemen <audio>. Pastikan untuk menyediakan berbagai format audio agar mendukung berbagai browser. Gunakan atribut seperti controls, autoplay, loop, dan preload sesuai kebutuhan untuk meningkatkan pengalaman pengguna. Dengan fitur ini, kamu dapat memperkaya konten web dengan suara atau musik secara efisien dan interaktif.</audio></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Menambahkan Audio pada HTML]]></summary></entry><entry><title type="html">Plugins</title><link href="http://localhost:4000/2025/04/24/Plugins.html" rel="alternate" type="text/html" title="Plugins" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/Plugins</id><content type="html" xml:base="http://localhost:4000/2025/04/24/Plugins.html"><![CDATA[<h1 id="-penjelasan-tentang-plugins-dalam-jekyll">🔌 Penjelasan tentang Plugins dalam Jekyll</h1>
-
-<h2 id="-pengertian-plugin">🔍 Pengertian Plugin</h2>
-
-<p><strong>Plugin</strong> adalah komponen tambahan yang dapat dipasang ke dalam program utama untuk menambahkan fitur atau fungsi tertentu tanpa harus mengubah program aslinya.</p>
-
-<p>Dengan kata lain, plugin itu seperti <strong>“alat bantu tambahan”</strong> — kamu bisa memilih sendiri apa yang dibutuhkan tanpa harus memodifikasi keseluruhan sistem.</p>
-
-<hr />
-
-<h2 id="-1-jekyll-sitemap">🔗 1. <code class="language-plaintext highlighter-rouge">jekyll-sitemap</code></h2>
-
-<p><strong>Fungsi</strong>:<br />
-Secara otomatis menghasilkan file <code class="language-plaintext highlighter-rouge">sitemap.xml</code>, yang sangat berguna bagi mesin pencari untuk memahami struktur situs kamu.</p>
-
-<p><strong>Kelebihan</strong>:</p>
-<ul>
-  <li>Membantu Google dan mesin pencari lainnya dalam proses crawling</li>
-  <li>Tidak perlu membuat sitemap secara manual</li>
-  <li>Langsung tersedia setelah proses build</li>
-</ul>
-
-<p><strong>Hasil</strong>:<br />
-File <code class="language-plaintext highlighter-rouge">sitemap.xml</code> muncul di root, misalnya:<br />
-<code class="language-plaintext highlighter-rouge">https://domainkamu.com/sitemap.xml</code></p>
-
-<hr />
-
-<h2 id="-2-jekyll-feed">📡 2. <code class="language-plaintext highlighter-rouge">jekyll-feed</code></h2>
-
-<p><strong>Fungsi</strong>:<br />
-Membuat file <code class="language-plaintext highlighter-rouge">feed.xml</code> secara otomatis, sehingga pembaca dapat berlangganan konten kamu melalui aplikasi pembaca RSS.</p>
-
-<p><strong>Kelebihan</strong>:</p>
-<ul>
-  <li>Memudahkan distribusi konten ke pengguna tetap</li>
-  <li>Bisa digunakan oleh layanan pihak ketiga seperti Feedly, Mailchimp, dll</li>
-</ul>
-
-<p><strong>Hasil</strong>:<br />
-<code class="language-plaintext highlighter-rouge">https://domainkamu.com/feed.xml</code> akan tersedia otomatis.</p>
-
-<hr />
-
-<h2 id="️-3-jekyll-seo-tag">🏷️ 3. <code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code></h2>
-
-<p><strong>Fungsi</strong>:<br />
-Menambahkan tag SEO secara otomatis ke bagian <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> HTML halaman, termasuk metadata untuk mesin pencari dan media sosial.</p>
-
-<p><strong>Kelebihan</strong>:</p>
-<ul>
-  <li>Tambahkan informasi penting seperti title, description, dan canonical</li>
-  <li>Mendukung Open Graph dan Twitter Card</li>
-  <li>Konfigurasi cukup lewat <code class="language-plaintext highlighter-rouge">_config.yml</code></li>
-</ul>
-
-<p><strong>Penggunaan</strong>:<br />
-Letakkan tag ini di layout utama kamu (misalnya <code class="language-plaintext highlighter-rouge">default.html</code>):</p>
-
-<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">seo</span><span class="w"> </span><span class="cp">%}</span>
-</code></pre></div></div>
-
-<hr />
-
-<h2 id="️-cara-menginstal-plugin-jekyll">⚙️ Cara Menginstal Plugin Jekyll</h2>
-
-<p>Untuk menambahkan plugin ke proyek Jekyll kamu, ikuti langkah-langkah berikut:</p>
-
-<h3 id="1-tambahkan-ke-gemfile"><strong>1. Tambahkan ke Gemfile</strong></h3>
-
-<p>Edit file <code class="language-plaintext highlighter-rouge">Gemfile</code> dan masukkan baris berikut di dalam grup plugin:</p>
-
-<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">group</span> <span class="ss">:jekyll_plugins</span> <span class="k">do</span>
-  <span class="n">gem</span> <span class="s1">'jekyll-sitemap'</span>
-  <span class="n">gem</span> <span class="s1">'jekyll-feed'</span>
-  <span class="n">gem</span> <span class="s1">'jekyll-seo-tag'</span>
-<span class="k">end</span>
-</code></pre></div></div>
-
-<h3 id="2-instal-plugin"><strong>2. Instal Plugin</strong></h3>
-
-<p>Setelah plugin ditambahkan, jalankan perintah ini di terminal untuk menginstalnya:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">install</span>
-</code></pre></div></div>
-
-<h3 id="3-tambahkan-di-_configyml"><strong>3. Tambahkan di <code class="language-plaintext highlighter-rouge">_config.yml</code></strong></h3>
-
-<p>Pastikan semua plugin dicantumkan di file <code class="language-plaintext highlighter-rouge">_config.yml</code>:</p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">plugins</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="s">jekyll-sitemap</span>
-  <span class="pi">-</span> <span class="s">jekyll-feed</span>
-  <span class="pi">-</span> <span class="s">jekyll-seo-tag</span>
-</code></pre></div></div>
-
-<hr />
-
-<h2 id="-kesimpulan">📝 Kesimpulan</h2>
-
-<p>Memanfaatkan plugin seperti <code class="language-plaintext highlighter-rouge">jekyll-sitemap</code>, <code class="language-plaintext highlighter-rouge">jekyll-feed</code>, dan <code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code> adalah cara efektif untuk menjadikan blog Jekyll kamu lebih optimal, baik untuk mesin pencari maupun pengunjung. Hanya dengan konfigurasi sederhana, kamu sudah bisa menikmati fitur-fitur canggih yang membuat blog tampak lebih profesional.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[🔌 Penjelasan tentang Plugins dalam Jekyll]]></summary></entry><entry><title type="html">config yml</title><link href="http://localhost:4000/2025/04/24/config-yml.html" rel="alternate" type="text/html" title="config yml" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/config-yml</id><content type="html" xml:base="http://localhost:4000/2025/04/24/config-yml.html"><![CDATA[<h1 id="-panduan-lengkap-configyml">📘 Panduan Lengkap: config.yml</h1>
+<p>Menambahkan audio ke dalam halaman HTML sangat mudah dengan menggunakan elemen <audio>. Pastikan untuk menyediakan berbagai format audio agar mendukung berbagai browser. Gunakan atribut seperti controls, autoplay, loop, dan preload sesuai kebutuhan untuk meningkatkan pengalaman pengguna. Dengan fitur ini, kamu dapat memperkaya konten web dengan suara atau musik secara efisien dan interaktif.</audio></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Menambahkan Audio pada HTML]]></summary></entry><entry><title type="html">config yml</title><link href="http://localhost:4000/2025/04/24/config-yml.html" rel="alternate" type="text/html" title="config yml" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/config-yml</id><content type="html" xml:base="http://localhost:4000/2025/04/24/config-yml.html"><![CDATA[<h1 id="-panduan-lengkap-configyml">📘 Panduan Lengkap: config.yml</h1>
 
 <h2 id="keterangan-dasar">Keterangan Dasar</h2>
 
@@ -659,7 +650,107 @@ Letakkan tag ini di layout utama kamu (misalnya <code class="language-plaintext 
   <li>Ringan dan mudah dibaca manusia</li>
   <li>Mendukung struktur data kompleks (nested, list, boolean)</li>
   <li>Sangat berguna dalam banyak ekosistem pengembangan seperti Jekyll, GitHub Actions, Docker, dan CI/CD pipeline</li>
-</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[📘 Panduan Lengkap: config.yml]]></summary></entry><entry><title type="html">HTML link dan List</title><link href="http://localhost:4000/2025/03/20/html-link-dan-lists.html" rel="alternate" type="text/html" title="HTML link dan List" /><published>2025-03-20T00:00:00+07:00</published><updated>2025-03-20T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/20/html-link-dan-lists</id><content type="html" xml:base="http://localhost:4000/2025/03/20/html-link-dan-lists.html"><![CDATA[<p>Penjelasan tentang link dan lists pada HTML.</p>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[📘 Panduan Lengkap: config.yml]]></summary></entry><entry><title type="html">Plugins</title><link href="http://localhost:4000/2025/04/24/Plugins.html" rel="alternate" type="text/html" title="Plugins" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/Plugins</id><content type="html" xml:base="http://localhost:4000/2025/04/24/Plugins.html"><![CDATA[<h1 id="-penjelasan-tentang-plugins-dalam-jekyll">🔌 Penjelasan tentang Plugins dalam Jekyll</h1>
+
+<h2 id="-pengertian-plugin">🔍 Pengertian Plugin</h2>
+
+<p><strong>Plugin</strong> adalah komponen tambahan yang dapat dipasang ke dalam program utama untuk menambahkan fitur atau fungsi tertentu tanpa harus mengubah program aslinya.</p>
+
+<p>Dengan kata lain, plugin itu seperti <strong>“alat bantu tambahan”</strong> — kamu bisa memilih sendiri apa yang dibutuhkan tanpa harus memodifikasi keseluruhan sistem.</p>
+
+<hr />
+
+<h2 id="-1-jekyll-sitemap">🔗 1. <code class="language-plaintext highlighter-rouge">jekyll-sitemap</code></h2>
+
+<p><strong>Fungsi</strong>:<br />
+Secara otomatis menghasilkan file <code class="language-plaintext highlighter-rouge">sitemap.xml</code>, yang sangat berguna bagi mesin pencari untuk memahami struktur situs kamu.</p>
+
+<p><strong>Kelebihan</strong>:</p>
+<ul>
+  <li>Membantu Google dan mesin pencari lainnya dalam proses crawling</li>
+  <li>Tidak perlu membuat sitemap secara manual</li>
+  <li>Langsung tersedia setelah proses build</li>
+</ul>
+
+<p><strong>Hasil</strong>:<br />
+File <code class="language-plaintext highlighter-rouge">sitemap.xml</code> muncul di root, misalnya:<br />
+<code class="language-plaintext highlighter-rouge">https://domainkamu.com/sitemap.xml</code></p>
+
+<hr />
+
+<h2 id="-2-jekyll-feed">📡 2. <code class="language-plaintext highlighter-rouge">jekyll-feed</code></h2>
+
+<p><strong>Fungsi</strong>:<br />
+Membuat file <code class="language-plaintext highlighter-rouge">feed.xml</code> secara otomatis, sehingga pembaca dapat berlangganan konten kamu melalui aplikasi pembaca RSS.</p>
+
+<p><strong>Kelebihan</strong>:</p>
+<ul>
+  <li>Memudahkan distribusi konten ke pengguna tetap</li>
+  <li>Bisa digunakan oleh layanan pihak ketiga seperti Feedly, Mailchimp, dll</li>
+</ul>
+
+<p><strong>Hasil</strong>:<br />
+<code class="language-plaintext highlighter-rouge">https://domainkamu.com/feed.xml</code> akan tersedia otomatis.</p>
+
+<hr />
+
+<h2 id="️-3-jekyll-seo-tag">🏷️ 3. <code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code></h2>
+
+<p><strong>Fungsi</strong>:<br />
+Menambahkan tag SEO secara otomatis ke bagian <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> HTML halaman, termasuk metadata untuk mesin pencari dan media sosial.</p>
+
+<p><strong>Kelebihan</strong>:</p>
+<ul>
+  <li>Tambahkan informasi penting seperti title, description, dan canonical</li>
+  <li>Mendukung Open Graph dan Twitter Card</li>
+  <li>Konfigurasi cukup lewat <code class="language-plaintext highlighter-rouge">_config.yml</code></li>
+</ul>
+
+<p><strong>Penggunaan</strong>:<br />
+Letakkan tag ini di layout utama kamu (misalnya <code class="language-plaintext highlighter-rouge">default.html</code>):</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">seo</span><span class="w"> </span><span class="cp">%}</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="️-cara-menginstal-plugin-jekyll">⚙️ Cara Menginstal Plugin Jekyll</h2>
+
+<p>Untuk menambahkan plugin ke proyek Jekyll kamu, ikuti langkah-langkah berikut:</p>
+
+<h3 id="1-tambahkan-ke-gemfile"><strong>1. Tambahkan ke Gemfile</strong></h3>
+
+<p>Edit file <code class="language-plaintext highlighter-rouge">Gemfile</code> dan masukkan baris berikut di dalam grup plugin:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">group</span> <span class="ss">:jekyll_plugins</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s1">'jekyll-sitemap'</span>
+  <span class="n">gem</span> <span class="s1">'jekyll-feed'</span>
+  <span class="n">gem</span> <span class="s1">'jekyll-seo-tag'</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h3 id="2-instal-plugin"><strong>2. Instal Plugin</strong></h3>
+
+<p>Setelah plugin ditambahkan, jalankan perintah ini di terminal untuk menginstalnya:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">install</span>
+</code></pre></div></div>
+
+<h3 id="3-tambahkan-di-_configyml"><strong>3. Tambahkan di <code class="language-plaintext highlighter-rouge">_config.yml</code></strong></h3>
+
+<p>Pastikan semua plugin dicantumkan di file <code class="language-plaintext highlighter-rouge">_config.yml</code>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">plugins</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">jekyll-sitemap</span>
+  <span class="pi">-</span> <span class="s">jekyll-feed</span>
+  <span class="pi">-</span> <span class="s">jekyll-seo-tag</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="-kesimpulan">📝 Kesimpulan</h2>
+
+<p>Memanfaatkan plugin seperti <code class="language-plaintext highlighter-rouge">jekyll-sitemap</code>, <code class="language-plaintext highlighter-rouge">jekyll-feed</code>, dan <code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code> adalah cara efektif untuk menjadikan blog Jekyll kamu lebih optimal, baik untuk mesin pencari maupun pengunjung. Hanya dengan konfigurasi sederhana, kamu sudah bisa menikmati fitur-fitur canggih yang membuat blog tampak lebih profesional.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[🔌 Penjelasan tentang Plugins dalam Jekyll]]></summary></entry><entry><title type="html">HTML link dan List</title><link href="http://localhost:4000/2025/03/20/html-link-dan-lists.html" rel="alternate" type="text/html" title="HTML link dan List" /><published>2025-03-20T00:00:00+07:00</published><updated>2025-03-20T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/20/html-link-dan-lists</id><content type="html" xml:base="http://localhost:4000/2025/03/20/html-link-dan-lists.html"><![CDATA[<p>Penjelasan tentang link dan lists pada HTML.</p>
 
 <p><img src="/assets/image/images.jpg" alt="Html link dan list" /></p>
 
@@ -1052,239 +1143,4 @@ Hasilnya:
 def hello():
     print(“Hello, World!”)</p>
 
-<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[penjelasan tentang markdown]]></summary></entry><entry><title type="html">Instalasi Ruby dan Jekyll</title><link href="http://localhost:4000/2025/02/20/Instalasi-Ruby-dan-Jekyll.html" rel="alternate" type="text/html" title="Instalasi Ruby dan Jekyll" /><published>2025-02-20T00:00:00+07:00</published><updated>2025-02-20T00:00:00+07:00</updated><id>http://localhost:4000/2025/02/20/Instalasi-Ruby-dan-Jekyll</id><content type="html" xml:base="http://localhost:4000/2025/02/20/Instalasi-Ruby-dan-Jekyll.html"><![CDATA[<p>penjelasan Instalasi Ruby dan Jekyll</p>
-
-<h2 id="cara-instalasi-ruby-dan-jekyll-di-windows"><strong>Cara Instalasi Ruby dan Jekyll di Windows</strong></h2>
-
-<p>Jekyll adalah generator situs statis berbasis Ruby yang banyak digunakan untuk membuat blog atau dokumentasi. Berikut adalah panduan langkah demi langkah untuk menginstal <strong>Ruby</strong> dan <strong>Jekyll</strong> di Windows.</p>
-
-<hr />
-
-<h2 id="1-instalasi-ruby"><strong>1. Instalasi Ruby</strong></h2>
-
-<h3 id="langkah-1-unduh-ruby-installer"><strong>Langkah 1: Unduh Ruby Installer</strong></h3>
-<ul>
-  <li>Kunjungi <a href="https://rubyinstaller.org/">https://rubyinstaller.org/</a></li>
-  <li>Unduh <strong>Ruby+Devkit</strong> versi terbaru (disarankan versi <strong>3.x</strong>).</li>
-</ul>
-
-<h3 id="langkah-2-instal-ruby"><strong>Langkah 2: Instal Ruby</strong></h3>
-<ul>
-  <li>Jalankan file <code class="language-plaintext highlighter-rouge">.exe</code> yang telah diunduh.</li>
-  <li>Pilih opsi <strong>“Add Ruby executables to your PATH”</strong> agar Ruby dapat dikenali di Command Prompt.</li>
-  <li>Setelah instalasi selesai, pilih opsi <strong>“Run ridk install”</strong> untuk menginstal tambahan Devkit.</li>
-</ul>
-
-<h3 id="langkah-3-verifikasi-instalasi-ruby"><strong>Langkah 3: Verifikasi Instalasi Ruby</strong></h3>
-<p>Buka <strong>Command Prompt (cmd)</strong> dan jalankan perintah berikut:</p>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby <span class="nt">-v</span>
-</code></pre></div></div>
-<p>Jika berhasil, akan muncul versi Ruby seperti:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby 3.2.2p53 (2023-03-01 revision 12345) [x64-mingw32]
-</code></pre></div></div>
-
-<hr />
-
-<h2 id="2-instalasi-jekyll"><strong>2. Instalasi Jekyll</strong></h2>
-
-<h3 id="langkah-1-instal-bundler-dan-jekyll"><strong>Langkah 1: Instal Bundler dan Jekyll</strong></h3>
-<p>Setelah Ruby terinstal, jalankan perintah berikut di <strong>Command Prompt</strong>:</p>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>jekyll bundler
-</code></pre></div></div>
-
-<h3 id="langkah-2-verifikasi-instalasi-jekyll"><strong>Langkah 2: Verifikasi Instalasi Jekyll</strong></h3>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll <span class="nt">-v</span>
-</code></pre></div></div>
-<p>Jika berhasil, akan muncul versi Jekyll, misalnya:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Jekyll 4.3.2
-</code></pre></div></div>
-
-<hr />
-
-<h2 id="3-membuat-dan-menjalankan-proyek-jekyll"><strong>3. Membuat dan Menjalankan Proyek Jekyll</strong></h2>
-
-<p>Setelah Jekyll berhasil diinstal, kita bisa membuat proyek blog baru dengan Jekyll.</p>
-
-<h3 id="langkah-1-buat-proyek-jekyll-baru"><strong>Langkah 1: Buat Proyek Jekyll Baru</strong></h3>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new myblog
-</code></pre></div></div>
-
-<h3 id="langkah-2-masuk-ke-folder-proyek"><strong>Langkah 2: Masuk ke Folder Proyek</strong></h3>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>myblog
-</code></pre></div></div>
-
-<h3 id="langkah-3-jalankan-jekyll"><strong>Langkah 3: Jalankan Jekyll</strong></h3>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
-</code></pre></div></div>
-
-<p>Jika berhasil, Anda akan melihat output seperti ini:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Server address: http://127.0.0.1:4000/
-</code></pre></div></div>
-<p>Buka browser dan akses <strong>http://localhost:4000</strong> untuk melihat blog yang telah dibuat.</p>
-
-<hr />
-<h2 id="konfigurasi-jekyll-dengan-github-pages"><strong>konfigurasi Jekyll dengan GitHub Pages</strong></h2>
-
-<p>Berikut adalah panduan untuk membuat Personal Web menggunakan Jekyll dan GitHub Pages:</p>
-
-<h3 id="1-membuat-repository-github">1. Membuat Repository GitHub</h3>
-
-<p>Untuk meng-host situs Jekyll menggunakan GitHub Pages, kamu perlu membuat repository di GitHub. Ikuti langkah-langkah ini:</p>
-
-<ol>
-  <li><em>Buat Repository Baru di GitHub</em>:
-    <ul>
-      <li>Masuk ke <a href="https://github.com/">GitHub</a>.</li>
-      <li>Klik tombol <em>New</em> untuk membuat repository baru.</li>
-      <li>Beri nama repository dengan format username.github.io, misalnya MuhZakyyy.github.io Ini adalah nama domain untuk situsmu.</li>
-      <li>Pilih <em>public</em> dan jangan centang opsi untuk menambahkan README.</li>
-      <li>Klik <em>Create repository</em>.</li>
-    </ul>
-  </li>
-  <li>
-    <p><em>Salin URL Repository</em>:
-Salin URL repository GitHub kamu, misalnya:</p>
-
-    <p>https://github.com/username/username.github.io</p>
-  </li>
-</ol>
-
-<h3 id="2-membuat-situs-jekyll-baru">2. Membuat Situs Jekyll Baru</h3>
-
-<p>Setelah repository GitHub dibuat, langkah berikutnya adalah membuat situs Jekyll secara lokal di komputer kamu.</p>
-
-<ol>
-  <li>
-    <p><em>Buat Situs Jekyll Baru</em>:
-Di terminal/command prompt, jalankan perintah berikut untuk membuat situs Jekyll baru:</p>
-
-    <p>jekyll new nama-repository</p>
-
-    <p>Gantilah nama-repository dengan nama yang sesuai. Pastikan folder situsmu sesuai dengan nama repository GitHub kamu nanti.</p>
-  </li>
-  <li>
-    <p><em>Pindah ke Direktori Situs</em>:
-Masuk ke folder situs Jekyll yang baru saja dibuat:</p>
-
-    <p>cd nama-repository</p>
-  </li>
-  <li>
-    <p><em>Verifikasi Situs Secara Lokal</em>:
-Jalankan situs secara lokal dengan perintah:</p>
-
-    <p>bundle exec jekyll serve</p>
-
-    <p>Situs akan berjalan di http://localhost:4000. Buka di browser untuk memastikan situs bisa ditampilkan.</p>
-  </li>
-</ol>
-
-<h3 id="3-menyambungkan-repository-github">3. Menyambungkan Repository GitHub</h3>
-
-<p>Sekarang, kita akan menyambungkan situs Jekyll yang baru dibuat ke repository GitHub agar bisa di-hosting di GitHub Pages.</p>
-
-<ol>
-  <li>
-    <p><em>Inisialisasi Git di Direktori Situs</em>:
-Jika belum, inisialisasi Git di folder situs Jekyll:</p>
-
-    <p>git init</p>
-  </li>
-  <li>
-    <p><em>Hubungkan Repository GitHub</em>:
-Menambahkan repository GitHub yang baru kamu buat sebagai remote:</p>
-
-    <p>git remote add origin https://github.com/username/username.github.io.git</p>
-  </li>
-  <li>
-    <p><em>Menambahkan dan Meng-commit File</em>:
-Tambahkan semua file ke staging area dan commit perubahan:</p>
-
-    <p>git add .
-git commit -m “Initial commit”</p>
-  </li>
-  <li>
-    <p><em>Push ke GitHub</em>:
-Kirimkan file yang sudah di-commit ke GitHub:</p>
-
-    <p>git push -u origin main</p>
-
-    <p>Jika kamu menggunakan branch master, gunakan perintah ini:</p>
-
-    <p>git push -u origin master</p>
-  </li>
-</ol>
-
-<h3 id="4-mengaktifkan-github-pages">4. Mengaktifkan GitHub Pages</h3>
-
-<p>Sekarang GitHub Pages harus diaktifkan untuk repository kamu.</p>
-
-<ol>
-  <li><em>Masuk ke Pengaturan Repository di GitHub</em>:
-    <ul>
-      <li>Buka halaman repository kamu di GitHub.</li>
-      <li>Klik tab <em>Settings</em> di bagian atas halaman.</li>
-    </ul>
-  </li>
-  <li><em>Aktifkan GitHub Pages</em>:
-    <ul>
-      <li>Di menu <em>Pages</em> (bagian bawah kiri), pilih <em>Source</em> dan pilih <em>main branch</em> (atau master jika kamu menggunakan branch itu).</li>
-      <li>Klik <em>Save</em>.</li>
-    </ul>
-  </li>
-  <li>
-    <p><em>Selesai!</em>:
-GitHub akan memproses dan meng-host situs Jekyll kamu. Biasanya, situs akan tersedia di:</p>
-
-    <p>https://username.github.io</p>
-  </li>
-</ol>
-
-<h3 id="5-menyesuaikan-situs-jekyll">5. Menyesuaikan Situs Jekyll</h3>
-
-<p>Sekarang situs kamu sudah aktif, kamu bisa menyesuaikan situs dengan mengedit beberapa file.</p>
-
-<ol>
-  <li>
-    <p><em>Konfigurasi _config.yml</em>:
-Buka file _config.yml dan sesuaikan pengaturan situsmu, seperti nama, deskripsi, dan URL:
-yaml
-title: My Personal Web
-description: This is my personal website hosted on GitHub Pages.
-url: “https://username.github.io”
-baseurl: “”</p>
-  </li>
-  <li><em>Menambahkan Postingan Blog atau Halaman Statis</em>:
-    <ul>
-      <li>Untuk menambahkan postingan blog, buat file Markdown di folder _posts dengan format nama YYYY-MM-DD-nama-post.md.</li>
-      <li>Untuk halaman statis seperti “Tentang Saya” atau “Kontak”, buat file .md di direktori root situs, misalnya about.md.</li>
-    </ul>
-  </li>
-  <li>
-    <p><em>Menambahkan Tema Jekyll</em>:
-Kamu bisa memilih tema dari <a href="https://jekyllrb.com/docs/themes/">Jekyll Themes</a>, lalu menambahkannya ke file _config.yml. Contoh:
-yaml
-theme: jekyll-theme-cayman</p>
-  </li>
-  <li><em>Menambahkan Custom CSS dan JavaScript</em>:
-Kamu juga bisa menambahkan file CSS atau JavaScript untuk memperindah tampilan situs di folder assets/css dan assets/js.</li>
-</ol>
-
-<h3 id="6-update-situs-dan-push-ke-github">6. Update Situs dan Push ke GitHub</h3>
-
-<p>Setelah melakukan perubahan pada situs, seperti menambahkan postingan atau mengubah tema, kamu bisa memperbarui situs di GitHub.</p>
-
-<ol>
-  <li>
-    <p><em>Tambah dan Commit Perubahan</em>:
-Setelah melakukan perubahan, jalankan perintah:</p>
-
-    <p>git add .
-git commit -m “Update site content”</p>
-  </li>
-  <li>
-    <p><em>Push Perubahan ke GitHub</em>:
-Kirimkan perubahan yang baru saja di-commit ke GitHub:</p>
-
-    <p>git push origin main</p>
-  </li>
-</ol>]]></content><author><name></name></author><summary type="html"><![CDATA[penjelasan Instalasi Ruby dan Jekyll]]></summary></entry></feed>
+<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[penjelasan tentang markdown]]></summary></entry></feed>
